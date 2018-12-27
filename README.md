@@ -1,2 +1,2 @@
 # Patrones de diseño
-En java y golang
+En java ,golang y python
