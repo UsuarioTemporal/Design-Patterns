@@ -3,14 +3,14 @@ package patrones_creacionales.singleton;
 
 
 public class Conexion {
-    private static Conexion instancia;
+    private  static Conexion instancia;
     private Conexion(){
         
     }
     
     public static Conexion getInstacia(){
         if(instancia==null){
-            return new Conexion();
+            instancia= new Conexion();
         }
         return instancia;
     }
