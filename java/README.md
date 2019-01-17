@@ -11,5 +11,16 @@ Se debe crear una clase SingleObject . Donde su constructor sea privado para que
 ```java
     public class Singleton{
         private static Singleton obj ;
+
+        private Singleton(){
+
+        }
+
+        public static Singleton getInstance(){
+            if(obj==null){
+                obj = new Singleton();
+            }
+            return obj;
+        }
     }
 ```
