@@ -21,4 +21,5 @@ public class Conexion {
     public void desconectar(){
         System.out.println("Me desconecte de la Bd");
     }
+    
 }

@@ -24,3 +24,30 @@ Se debe crear una clase SingleObject . Donde su constructor sea privado para que
         }
     }
 ```
+
+### PLUS(Control de doble bloqueo) : 
+> Este es un patron de diseño utilizado para reducir la sobrecarga de adquirir un bloqueo al probar el criterio del bloqueo<br>
+>El bloqueo se produce solo si la verificación del criterio de bloqueo indica que se requiere un bloqueo
+
+
+
+Forma eficiente usando el doble control de bloqueo :
+
+```java
+    public class Singleton{
+        private volatile static Singleton obj ;//La palabra volatile garantizará varios subprocesos manejen la isntacia de singleton correctamente
+        private Singleton(){
+
+        }
+        public static Singleton getInstance(){
+            if(obj==null){
+                synchronized (Singleton.class){
+                    if(obj==null){
+                        obj=new Singleton();
+                    }
+                }
+            }
+            return obj;
+        }
+    }
+```
