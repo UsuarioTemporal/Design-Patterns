@@ -13,5 +13,6 @@ public class App {
     public static void main(String[] args) {
         PaisDAOImpl dao = new PaisDAOImpl();
         dao.getPaises().forEach(e->System.out.println(e.toString()));
+        
     }
 }

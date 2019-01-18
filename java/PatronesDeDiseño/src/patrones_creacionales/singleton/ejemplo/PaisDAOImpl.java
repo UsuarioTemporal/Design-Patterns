@@ -12,12 +12,18 @@ import java.util.LinkedList;
  * @author User
  */
 public class PaisDAOImpl {
-    private LinkedList<Pais> paises=new LinkedList<>();
+    private static LinkedList<Pais> paises=null;
     public LinkedList<Pais> getPaises(){
-        paises.add(new Pais("Peru"));
-        paises.add(new Pais("Colombia"));
-        paises.add(new Pais("Chile"));
-        paises.add(new Pais("Mexico"));
+        if(paises==null){
+            paises=new LinkedList<>();
+            paises.add(new Pais("Peru"));
+            paises.add(new Pais("Colombia"));
+            paises.add(new Pais("Chile"));
+            paises.add(new Pais("Mexico"));
+            
+        }
         return paises;
+        
     }
+    
 }
