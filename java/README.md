@@ -56,7 +56,45 @@ Forma eficiente usando el doble control de bloqueo :
 Este es el patron mas usando al desarrollar software en java . Este tipo de patron de diseño se incluye en el patron de creación, ya que este patron proporciona una de las mejores formas de crear un objeto.
 En este patron se crea un objeto sin exponer la logica de creacion al cliente y nos referimos al nuevo objeto creado usando lainterfaz comun.
 Este objeto lo que permitirá es construir un objeto cada ves que necesitemos.por eso el nombre de fabrica
-
+### **Intención**
+Define una interfaz para crear un objeto,pero deja que las subclases decidan que clase crear una instacia.
 ```java
-    
+    interface IAuto{
+        void arrancar();
+    }
+
+    class Toyota implements IAuto{
+        @Override
+        public void arrancar(){
+            System.out.println("Arrancando Toyota");
+        }
+    }
+    class Nisan implements IAuto{
+        @Override
+        public void arrancar(){
+            System.out.println("Arrancando Toyota");
+        }
+    }
+    class Fabrica{
+        public IAuto getAuto(String marca){
+            if(marca.equalsIgnoreCase("TOYOTA")){
+                return new Toyota();
+            }else{
+                return new Nisan();
+            }
+        }
+    }
+
+    class Main{
+        public static void main(String[] args){
+            Fabrica fabrica=new Fabrica();
+            IAuto toy = fabrica.getAuto("toyota");
+            toy.arrancar();
+            IAuto nis = fabrica.getAuto("nisan");
+            nis.arrancar();
+        }
+    }
 ```
+
+
+## **Prototype**
