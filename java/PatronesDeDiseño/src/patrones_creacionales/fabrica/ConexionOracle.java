@@ -9,6 +9,16 @@ package patrones_creacionales.fabrica;
  *
  * @author User
  */
-public class ConexionOracle {
+public class ConexionOracle implements IConexion{
+
+    @Override
+    public void conectar() {
+        System.out.println("Se conecto a Oracle");
+    }
+
+    @Override
+    public void desconectar() {
+        System.out.println("Se desconecto a Oracle");
+    }
     
 }

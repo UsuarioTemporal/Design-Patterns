@@ -9,6 +9,16 @@ package patrones_creacionales.fabrica;
  *
  * @author User
  */
-public class ConexionMysql {
+public class ConexionMysql implements IConexion{
+
+    @Override
+    public void conectar() {
+        System.out.println("Se conecto a MYSQL");
+    }
+
+    @Override
+    public void desconectar() {
+        System.out.println("Se desconecto a MYSQL");
+    }
     
 }

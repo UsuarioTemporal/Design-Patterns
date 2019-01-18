@@ -9,6 +9,14 @@ package patrones_creacionales.fabrica;
  *
  * @author User
  */
-public class ConexionPostgreSQL {
-    
+public class ConexionPostgreSQL implements IConexion{
+
+    @Override
+    public void conectar() {
+        System.out.println("Se conecto a PostgreSQL");
+    }
+    @Override
+    public void desconectar() {
+        System.out.println("Se desconecto a PostgreSQL");
+    }
 }
