@@ -10,8 +10,8 @@ package patrones_creacionales.prototipo.ejemplos;
  * @author User
  */
 public abstract class Persona implements Cloneable{
-    private String nombre;
-    private int edad;
-    
+    protected String nombre;
+    protected int edad;
     abstract Persona clonar();
+    
 }

@@ -9,6 +9,11 @@ package patrones_creacionales.prototipo.ejemplos;
  *
  * @author User
  */
-public class Profesor {
+public class Profesor extends Persona{
+    
+    @Override
+    Persona clonar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
