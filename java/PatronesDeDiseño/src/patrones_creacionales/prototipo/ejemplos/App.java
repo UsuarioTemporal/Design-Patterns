@@ -11,6 +11,14 @@ package patrones_creacionales.prototipo.ejemplos;
  */
 public class App {
     public static void main(String[] args) {
-        
+        Factory fabrica =new Factory();
+        Persona p1 = fabrica.getPersona("Alumno");
+        p1.setNombre("Thom");
+        p1.setEdad(21);
+        System.out.println(p1);
+        Persona p2 = p1.clonar();
+        p2.setNombre("Carlos");
+        System.out.println(p2);
+        System.out.println(p1==p2);
     }
 }

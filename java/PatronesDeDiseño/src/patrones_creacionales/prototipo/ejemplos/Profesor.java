@@ -5,6 +5,9 @@
  */
 package patrones_creacionales.prototipo.ejemplos;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author User
@@ -13,7 +16,14 @@ public class Profesor extends Persona{
     
     @Override
     Persona clonar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            Profesor p = null;
+        try {
+            p = (Profesor) clone();
+        } catch (CloneNotSupportedException ex) {
+            Logger.getLogger(Profesor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return p;
     }
+
     
 }

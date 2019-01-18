@@ -13,7 +13,11 @@ public class Alumno extends Persona {
     
     @Override
     Persona clonar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Alumno a = null;
+        try {
+            a = (Alumno) clone();
+        } catch (CloneNotSupportedException e) {
+        }
+        return a;
     }
-    
 }
