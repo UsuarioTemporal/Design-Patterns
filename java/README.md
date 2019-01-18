@@ -1,7 +1,7 @@
 [Referenicias](https://www.tutorialspoint.com/design_pattern)
 
 # **Patrones de diseño creacionales**
-Se centrar en automatizar los problemas al crear instacias de las clases de nuestra aplicacion.
+Se centran en automatizar los problemas al crear instancias de las clases de nuestra aplicacion.
 ## **Singleton**
 Su proposito es asegurar que solo exista un instancia de una clase.Este es patron de diseño mas simple que se puede utilizar al momento del desarrollo de software.
 Hay veces en las que necitaremos de una sola instacia de una conexion a una base de datos , ahora imagines que multiples usarios se conecten entonces tendremos multiples conexiones , para facilitar este es mejor crear una sola instacia de esta conexion y que los usarios consuman de esta sola instacia.
@@ -72,7 +72,7 @@ Define una interfaz para crear un objeto,pero deja que las subclases decidan que
     class Nisan implements IAuto{
         @Override
         public void arrancar(){
-            System.out.println("Arrancando Toyota");
+            System.out.println("Arrancando Nisan");
         }
     }
     class Fabrica{
@@ -98,3 +98,4 @@ Define una interfaz para crear un objeto,pero deja que las subclases decidan que
 
 
 ## **Prototype**
+Este patron lo que permite es ocultar la complejidad de crear nuevas instancias del cliente.El concepto es copiar un objeto existente en lugar de crear una nueva instacias desde cero .El objeto existente acutara como un prototipo y contiene el estado del objeto. El objeto recien copiado podra cambiar o modificar las propiedades si es necesario.Este patron o enfoque reducirá recuersos y tiempo en lugar de crear desde cero un objeto.
