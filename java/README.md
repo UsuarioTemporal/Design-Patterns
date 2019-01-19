@@ -101,6 +101,12 @@ Define una interfaz para crear un objeto,pero deja que las subclases decidan que
 Este patron lo que permite es ocultar la complejidad de crear nuevas instancias del cliente.El concepto es copiar un objeto existente en lugar de crear una nueva instacias desde cero .El objeto existente actuara como un prototipo y contiene el estado del objeto. El objeto recien copiado podra cambiar o modificar las propiedades si es necesario.Este patron o enfoque reducirá recuersos y tiempo en lugar de crear desde cero un objeto.
 
 > El ejemplo se puede ver en su respectiva carpeta
+## **Builder**
+Objetivo : Permitir que el código controle el proceso de construcion de los objetos
+Separar la construccion de un objeto complejo de su reprensentacion , de manera que el mismo proceso de construccion pueda crear diferentes representaciones.
+
+La recomendacion es que se utilice este patron de diseño cuando se desea que el código del cliente tenga un control sobre el proceso de construccion,pero que sea capaz de terminar con diferentes tipos de objetos
+
 
 # **Patrones de diseño estructurales**
 Estos patrones diseño estructurales nos ayudaran en tener una forma mas sencilla y concisa las relaciones entre los objetos o entidades
