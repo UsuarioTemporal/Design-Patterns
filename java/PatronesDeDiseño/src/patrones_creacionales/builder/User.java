@@ -69,5 +69,11 @@ public class User {
     public void setTags(LinkedList<String> tags) {
         this.tags = tags;
     }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", nick=" + nick + ", name=" + name + ", familyName=" + familyName + ", phone=" + phone + ", tags=" + tags + '}';
+    }
+    
     
 }

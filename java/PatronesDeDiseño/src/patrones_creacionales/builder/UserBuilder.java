@@ -1,5 +1,7 @@
 package patrones_creacionales.builder;
 
+import java.util.LinkedList;
+
 
 public class UserBuilder {
     private User usuario;
@@ -19,6 +21,17 @@ public class UserBuilder {
         usuario.setFamilyName(familyName);
         return this;
     }
-    
+    public UserBuilder tag(String tag){
+        LinkedList<String> tagss = usuario.getTags();
+        if(tagss==null){
+            tagss=new LinkedList<>();
+        }
+        tagss.add(tag);
+        usuario.setTags(tagss);
+        return this;
+    }
+    public User build(){
+        return usuario;
+    }
     
 }
