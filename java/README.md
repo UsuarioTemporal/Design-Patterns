@@ -132,6 +132,18 @@ Este patrón implica una clase única que proporciona métodos simplificados req
 
 En conclusiones este patron simplifica la complejidad del sistema.
 
+### **Intencion :**
+
+Proporcionar una interfaz simplificada para cada grupo de subsistemas o un sistema complejo
+
+### **Motivacion**
+
+Simplificar el acceso a un conjunto de clases , proporcionar una clase en el que todos utilizan para comunicarse
+
+### **Objetivo :**
+
+Reducir la complejidad y minimizar las dependencias, realizar acciones cortas
+
 ```java
     public class Cpu{
         private int contadores = -1;
@@ -304,3 +316,7 @@ En conclusiones este patron simplifica la complejidad del sistema.
 **Conclusiones finales :** 
 
 El patron de diseño fachada discute la encapsulacion de un subsistema complejo dentro de un único objeto de interfaz.Esto reduce la curva de aprendizaje necesaria para aprovechar con exito el subsistema.Tambien promueve el desacoplamiento del subsistewma de sus potenciales clientes
+
+## **Decorador**
+
+Lo que hace este patron es adicionar propiedades o acciones aun cierto objeto clase o funcion sin alterar este mismo , esd ecir sin alterar las propiedades bases que tiene el objeto o clase. Al igual que python :3
