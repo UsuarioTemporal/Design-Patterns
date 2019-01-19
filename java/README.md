@@ -259,4 +259,44 @@ En conclusiones este patron simplifica la complejidad del sistema.
     }
 
     // Con fachadda
+    class Fachada(){
+        private Cpu miCPU ;
+        public Usuario{
+            miCPU=new Cpu();
+        }
+        public void encenderCPU(){
+            miCPU.enviarVoltaje(110);
+            miCPU.enviaEnergiaADispositivos();
+            miCPU.reseteaContadores();
+            miCPU.revisaBIOS();
+            miCPU.revisaHardware();
+            miCPU.asignaCanales();
+            miCPU.revisaMemoria();
+            miCPU.revisaEntradas();
+            miCPU.buscaSectorArranque();
+            miCPU.cargaBoot();
+            miCPU.cargaSistemaOperativo();
+            if(miCPU.cpuLista()){
+                System.out.println("\n");
+                System.out.println("CPU ENCENDIDA Y LISTA PARA TRABAJAR!!!");
+            }
+        }
+    }
+    class ClienteConFachada(){
+        private Fachada miFachada;
+
+        public ClienteConFachada(){
+            miFachada = new Fachada();
+        }
+
+        public void encenderCPU(){
+            miFachada.encenderCPU();
+            System.out.println("COMIENZO A TRABAJAR");
+        }
+
+        public static void main(String args[]){
+            ClienteConFachada ccf = new ClienteConFachada();
+            ccf.encenderCPU();
+        }
+    }
 ```
