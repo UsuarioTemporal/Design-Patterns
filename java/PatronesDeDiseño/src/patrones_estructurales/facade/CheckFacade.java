@@ -10,5 +10,16 @@ package patrones_estructurales.facade;
  * @author User
  */
 public class CheckFacade {
+    private AvionAPI avionApi;
+    private HotelAPI hotelApi;
     
+    public CheckFacade(){
+        avionApi = new AvionAPI();
+        hotelApi=new HotelAPI();
+    }
+    
+    public void buscar(String fechaIda,String fechaVuelta,String origem,String destino){
+        avionApi.buscarVuelos(fechaIda, fechaVuelta, origem, destino);
+        hotelApi.buscarVuelos(fechaIda, fechaIda, origem, destino);
+    }
 }
