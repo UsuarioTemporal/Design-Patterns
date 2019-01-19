@@ -319,4 +319,5 @@ El patron de diseño fachada discute la encapsulacion de un subsistema complejo 
 
 ## **Decorador**
 
-Lo que hace este patron es adicionar propiedades o acciones aun cierto objeto clase o funcion sin alterar este mismo , esd ecir sin alterar las propiedades bases que tiene el objeto o clase. Al igual que python :3
+Lo que hace este patron es adicionar propiedades o acciones aun cierto objeto clase o funcion sin alterar este mismo , esd ecir sin alterar las propiedades bases que tiene el objeto o clase base. Al igual que python :3
+
