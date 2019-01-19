@@ -102,8 +102,8 @@ Este patron lo que permite es ocultar la complejidad de crear nuevas instancias 
 
 > El ejemplo se puede ver en su respectiva carpeta
 
-# **Patrones de diseño estructurales**
-Estos patrones nos ayudaran en tener una forma mas sencilla y concisa las relaciones entre los objetos o entidades
+# *Patrones de diseño estructurales*
+Estos patrones diseño estructurales nos ayudaran en tener una forma mas sencilla y concisa las relaciones entre los objetos o entidades
 
 ## **Facade**
 El patrón de diseño Facade o en su traduccion como facahda oculta las complejidades del sistema y proporciona una interfaz pra el cliente mediante la cual el cliente puede acceder al sistema.
