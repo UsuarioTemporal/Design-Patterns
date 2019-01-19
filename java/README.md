@@ -261,7 +261,7 @@ En conclusiones este patron simplifica la complejidad del sistema.
     // Con fachadda
     class Fachada(){
         private Cpu miCPU ;
-        public Usuario{
+        public Fachada(){
             miCPU=new Cpu();
         }
         public void encenderCPU(){
@@ -300,3 +300,7 @@ En conclusiones este patron simplifica la complejidad del sistema.
         }
     }
 ```
+
+**Conclusiones finales :** 
+
+El patron de diseño fachada discute la encapsulacion de un subsistema complejo dentro de un único objeto de interfaz.Esto reduce la curva de aprendizaje necesaria para aprovechar con exito el subsistema.Tambien promueve el desacoplamiento del subsistewma de sus potenciales clientes
