@@ -321,3 +321,4 @@ El patron de diseño fachada discute la encapsulacion de un subsistema complejo 
 
 Lo que hace este patron es adicionar propiedades o acciones aun cierto objeto clase o funcion sin alterar este mismo , esd ecir sin alterar las propiedades bases que tiene el objeto o clase base. Al igual que python :3
 
+El proposito es minimizar el arbol de herencia . Asigna responsabilidades de forma dinamica a objetos , proporcionando una alternativa flexible de herencia
