@@ -326,3 +326,5 @@ El proposito es minimizar el arbol de herencia . Asigna responsabilidades de for
 Supongamos que está trabajando en un kit de herramientasde interfaz de usuario y desea admitir la adcion de border y barras de desplazamientos a als ventanas.Podria definir una jerarquia de herencia como : 
 
 ![alt](https://sourcemaking.com/files/v2/content/patterns/Decorator.png)
+
+Pero el patron decorador sugiere darle al cliente la capacidad de especificar cuelquier combinacion de **"caracteristicas"** que desee .

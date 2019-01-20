@@ -3,25 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_estructurales.decorador;
- 
+package patrones_estructurales.decorador.ejm;
+
 /**
  *
  * @author User
  */
-public abstract class Decorador implements Pizza{
-    protected Pizza pizzaTemporal ;
-    public Decorador(Pizza pizzaTemporal){
-        this.pizzaTemporal=pizzaTemporal;
-    }
+public class Hambuerguesa implements IHambuerguesa{
+
     @Override
     public String getDescripcion() {
-        return pizzaTemporal.getDescripcion();
+        return "pan + carne ";
     }
 
     @Override
     public double getPrecio() {
-        return pizzaTemporal.getPrecio();
+        return 5;
     }
     
 }
