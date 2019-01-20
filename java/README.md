@@ -328,3 +328,6 @@ Supongamos que está trabajando en un kit de herramientasde interfaz de usuario 
 ![alt](https://sourcemaking.com/files/v2/content/patterns/Decorator.png)
 
 Pero el patron decorador sugiere darle al cliente la capacidad de especificar cuelquier combinacion de **"caracteristicas"** que desee .
+
+## **Proxy**
+
