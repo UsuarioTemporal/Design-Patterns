@@ -17,12 +17,12 @@ public class Lechuga extends DecoradorHamburgesa{
 
     @Override
     public String getDescripcion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hamburguesaDecorada.getDescripcion()+" + lechuga";
     }
 
     @Override
     public double getPrecio() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hamburguesaDecorada.getPrecio()+2;
     }
     
 }

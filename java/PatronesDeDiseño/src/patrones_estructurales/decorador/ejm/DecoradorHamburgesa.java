@@ -17,4 +17,5 @@ public abstract class DecoradorHamburgesa implements IHambuerguesa{
         this.hamburguesaDecorada=hamburguesaDecorada;
     }
     
+    
 }
