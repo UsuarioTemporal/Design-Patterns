@@ -9,6 +9,18 @@ package patrones_estructurales.decorador.ejmVehiculo;
  *
  * @author User
  */
-public class GPS {
-    
+public class GPS extends Decorador{
+    public GPS(IVehiculo vehiculoDecorado) {
+        super(vehiculoDecorado);
+    }
+
+    @Override
+    public String getDescripcion() {
+        return vehiculoDecorado.getDescripcion()+" + gps";
+    }
+
+    @Override
+    public double getPrecio() {
+        return vehiculoDecorado.getPrecio()+200;
+    }
 }

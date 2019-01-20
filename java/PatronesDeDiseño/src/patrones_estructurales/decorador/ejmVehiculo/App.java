@@ -14,6 +14,9 @@ package patrones_estructurales.decorador.ejmVehiculo;
  */
 public class App {
     public static void main(String[] args) {
-        
+        IVehiculo veh =new VehiculoModel(4000, "Toyota");
+        System.out.println(veh.getDescripcion()+" "+veh.getPrecio());
+        veh=new Musica(new GPS(veh));
+        System.out.println(veh.getDescripcion()+" "+veh.getPrecio());
     }
 }

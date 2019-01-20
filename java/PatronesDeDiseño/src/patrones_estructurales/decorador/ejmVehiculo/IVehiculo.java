@@ -10,5 +10,6 @@ package patrones_estructurales.decorador.ejmVehiculo;
  * @author User
  */
 public interface IVehiculo {
-    
+    String getDescripcion();
+    double getPrecio();
 }

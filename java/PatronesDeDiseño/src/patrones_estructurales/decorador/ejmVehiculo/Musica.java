@@ -9,6 +9,21 @@ package patrones_estructurales.decorador.ejmVehiculo;
  *
  * @author User
  */
-public class Musica {
+public class Musica extends Decorador {
+
+    public Musica(IVehiculo vehiculoDecorado) {
+        super(vehiculoDecorado);
+    }
+
+
+    @Override
+    public String getDescripcion() {
+        return vehiculoDecorado.getDescripcion()+" + musica";
+    }
+
+    @Override
+    public double getPrecio() {
+        return vehiculoDecorado.getPrecio()+20;
+    }
     
 }

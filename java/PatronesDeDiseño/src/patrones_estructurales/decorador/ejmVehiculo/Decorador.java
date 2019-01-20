@@ -9,6 +9,12 @@ package patrones_estructurales.decorador.ejmVehiculo;
  *
  * @author User
  */
-public abstract class Decorador {
-    
+public abstract class Decorador implements IVehiculo{
+    protected IVehiculo vehiculoDecorado;
+    public Decorador(IVehiculo vehiculoDecorado){
+        this.vehiculoDecorado=vehiculoDecorado;
+    }
+    public IVehiculo getVehiculo(){
+        return vehiculoDecorado;
+    }
 }

@@ -9,6 +9,22 @@ package patrones_estructurales.decorador.ejmVehiculo;
  *
  * @author User
  */
-public class VehiculoModel {
+public class VehiculoModel implements IVehiculo{
+    private double precio;
+    private String descripcion;
+    public VehiculoModel(double precio,String descripcion){
+        this.descripcion=descripcion;
+        this.precio=precio;
+    }
+    
+    @Override
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    @Override
+    public double getPrecio() {
+        return precio;
+    }
     
 }
