@@ -9,7 +9,7 @@ package patrones_estructurales.decorador;
  *
  * @author User
  */
-public interface Pïzza {
+public interface Pizza {
     String getDescripcion();
     double getPrecio();
 }
