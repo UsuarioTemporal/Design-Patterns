@@ -6,12 +6,14 @@
 package patrones_estructurales.decorador;
 
 /**
- * Se pretende realizar la gestión de vehiculos.Se parte de un vehiculo con modelo y precio 
- * A los diferentes vehiculos se les puede añadir extras : GPS , MP3 , EDS ... Cada extra tiene
- * un precio y una descripcion
- * 
- * Finalmente, al objeto se le puede consultar su descripcion (debe informar de los extras incorporados) y el precio final
+ *
+ * @author User
  */
 public class App {
-    
+    public static void main(String[] args) {
+        Pizza pizza = new PlainPizza();
+        System.out.println(pizza.getDescripcion()+" "+pizza.getPrecio());
+        pizza=new Papas(new Queso(pizza));
+        System.out.println(pizza.getDescripcion()+" "+pizza.getPrecio());
+    }
 }

@@ -4,16 +4,23 @@
  * and open the template in the editor.
  */
 package patrones_estructurales.decorador;
- 
+
+import patrones_estructurales.decorador.Pizza;
+
 /**
  *
  * @author User
  */
-public abstract class Decorador implements Pizza{
-    protected Pizza pizzaTemporal ;
-    public Decorador(Pizza pizzaTemporal){
-        this.pizzaTemporal=pizzaTemporal;
+public class PlainPizza implements Pizza{
+
+    @Override
+    public String getDescripcion() {
+        return "Masa de pizza ";
     }
-    
+
+    @Override
+    public double getPrecio() {
+        return 5;
+    }
     
 }
