@@ -13,5 +13,7 @@ package patrones_estructurales.decorador.ejmVehiculo;
  * Finalmente, al objeto se le puede consultar su descripcion (debe informar de los extras incorporados) y el precio final
  */
 public class App {
-    
+    public static void main(String[] args) {
+        
+    }
 }
