@@ -34,5 +34,10 @@ public class Cuenta {
     public void setSaldoInicial(double saldoInicial) {
         this.saldoInicial = saldoInicial;
     }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" + "idCuenta=" + idCuenta + ", usuario=" + usuario + ", saldoInicial=" + saldoInicial + '}';
+    }
     
 }
