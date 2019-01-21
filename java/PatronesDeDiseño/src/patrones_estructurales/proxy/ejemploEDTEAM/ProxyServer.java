@@ -9,15 +9,22 @@ package patrones_estructurales.proxy.ejemploEDTEAM;
  *
  * @author User
  */
-public class ServidorReal implements Servidor {
+public class ProxyServer implements Servidor{
+    ServidorReal servidorReal;
     private String host;
-    public ServidorReal(String host){
+
+    public ProxyServer(String host) {
         this.host=host;
-        System.out.println("Iniciando ..,");
+        servidorReal=null;
+        System.out.println("Iniciando Proxy");
     }
+    
     @Override
     public void descargar(String url) {
-        System.out.println("descargando..."+host+" "+url);
+        if(servidorReal==null){
+            servidorReal=new ServidorReal(host);
+        }
+        servidorReal.descargar(url);
     }
     
 }

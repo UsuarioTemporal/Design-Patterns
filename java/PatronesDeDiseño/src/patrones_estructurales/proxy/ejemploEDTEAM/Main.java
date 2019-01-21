@@ -36,6 +36,7 @@ package patrones_estructurales.proxy.ejemploEDTEAM;
  */
 public class Main {
     public static void main(String[] args) {
-        
+        Servidor server=new ProxyServer("misitio.com" );
+        server.descargar("cursos.json");
     }
 }
