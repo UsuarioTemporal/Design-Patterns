@@ -9,6 +9,17 @@ package patrones_estructurales.proxy.ejemploEDTEAM;
  *
  * @author User
  */
+
+/**
+ * 
+ * Sustituto y el control de acceso
+ * 
+ * Intermediario para las peticiones, intermediario para el manejo de peticiones
+ * 
+ * Nos provee un elemento sustituto de un objeto y controlar el acceso
+ */
 public class Main {
-    
+    public static void main(String[] args) {
+        
+    }
 }
