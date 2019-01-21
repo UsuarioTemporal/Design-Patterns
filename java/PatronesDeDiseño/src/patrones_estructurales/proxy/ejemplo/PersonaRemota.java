@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package patrones_estructurales.proxy.ejemplo;
 
 import java.io.BufferedReader;
@@ -11,10 +6,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- *
- * @author User
- */
 public class PersonaRemota implements Runnable{
     private Thread thread;
     protected ServerSocket socket; // abrira un puerto para escuchar la peticiones que se realicen
@@ -51,12 +42,15 @@ public class PersonaRemota implements Runnable{
     }
 
     private void saludar() {
+        System.out.println("Hola ...");
     }
 
     private void decirEstado() {
+        System.out.println("Contento...");
     }
 
     private void despedirse() {
+        System.out.println("Adios...");
     }
     
 }

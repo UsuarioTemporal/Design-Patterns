@@ -346,3 +346,11 @@ Estructuralmente es igual al patron de diseño facade.
 Por lo general la intencion y el objeto de proxy es proporcionar una funcionalidad especifica que el usuario no deberia preocuparse o necesita conocer los detalles.En cambio el patron facade el usuario no tiene la la forma especifica en que se maneja , ejm una api.
 
 Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachada para que el comprador ofrezca un articulo, y en el backend podria estar habalndo multiples módilos diferentes para procesar la oferta.
+
+
+**Tipo de proxy** 
+
+- Virtual : Da la creacion de un objeto a otro
+- Autentificación : Verifica que los permisos de acceso sean adecuados
+- Remoto : Codifica las peticiones y las envia a la red
+- Smart : Adiciona o modifica las peticones antes de enviarlas
