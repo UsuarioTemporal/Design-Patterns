@@ -3,6 +3,8 @@
 
 [Referenicias](https://www.tutorialspoint.com/design_pattern)
 
+[Preguntas](https://stackoverflow.com/questions/3489131/difference-between-the-facade-proxy-adapter-and-decorator-design-patterns)
+
 Se centran en automatizar los problemas al crear instancias de las clases de nuestra aplicacion.
 
 ## **Singleton**
@@ -331,3 +333,4 @@ Pero el patron decorador sugiere darle al cliente la capacidad de especificar cu
 
 ## **Proxy**
 
+Da soporte a objetos que controlan la creacion y el acceso a otros objetos.Es un punto intermedio entre el cliente y esos objetos que son activados cuando se cumplen con determinados requisitos.
