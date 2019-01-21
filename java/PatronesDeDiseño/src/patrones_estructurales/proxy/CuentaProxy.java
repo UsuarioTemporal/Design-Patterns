@@ -9,6 +9,30 @@ package patrones_estructurales.proxy;
  *
  * @author User
  */
-public class CuentaProxy {
+public class CuentaProxy implements ICuenta{
+    private CuentaBancoAImple cuentaReal;
+    public CuentaProxy(){
+        cuentaReal=null;
+    }
+    @Override
+    public Cuenta retirarDinero(Cuenta cuenta, double monto) {
+        if(cuentaReal==null){
+            cuentaReal=new CuentaBancoAImple();
+        }
+        return cuentaReal.retirarDinero(cuenta, monto);
+    }
+
+    @Override
+    public Cuenta depositarDinero(Cuenta cuenta, double monto) {
+        if(cuentaReal==null){
+            cuentaReal=new CuentaBancoAImple();
+        }
+        return cuentaReal.depositarDinero(cuenta, monto);
+    }
+
+    @Override
+    public void mostrarSaldo(Cuenta cuenta) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
