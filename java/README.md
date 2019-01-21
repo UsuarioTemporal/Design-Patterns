@@ -334,3 +334,9 @@ Pero el patron decorador sugiere darle al cliente la capacidad de especificar cu
 ## **Proxy**
 
 Da soporte a objetos que controlan la creacion y el acceso a otros objetos.Es un punto intermedio entre el cliente y esos objetos que son activados cuando se cumplen con determinados requisitos.
+
+> Un ejemplo de Proxy puede ser el mecanismo para registrarse y hacer un login a un sitio web .No se tiene acceso a determinados objetos hasta que el usuario no este registrado y lleve a cabo el login de forma correcta.
+
+> Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la instaciacion del momento real de su uso.
+
+Si un calculo lleva mucho tiempo en realizarse , podemos usar el proxyn para mostrar resultados intermedios
