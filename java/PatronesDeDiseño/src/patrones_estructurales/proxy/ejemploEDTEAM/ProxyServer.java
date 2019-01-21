@@ -10,7 +10,7 @@ package patrones_estructurales.proxy.ejemploEDTEAM;
  * @author User
  */
 public class ProxyServer implements Servidor{
-    ServidorReal servidorReal;
+    private ServidorReal servidorReal;
     private String host;
 
     public ProxyServer(String host) {
