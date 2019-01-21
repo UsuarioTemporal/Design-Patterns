@@ -340,3 +340,9 @@ Da soporte a objetos que controlan la creacion y el acceso a otros objetos.Es un
 > Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la instaciacion del momento real de su uso.
 
 Si un calculo lleva mucho tiempo en realizarse , podemos usar el proxyn para mostrar resultados intermedios
+
+Estructuralmente es igual al patron de diseño facade.
+
+Por lo general la intencion y el objeto de proxy es proporcionar una funcionalidad especifica que el usuario no deberia preocuparse o necesita conocer los detalles.En cambio el patron facade el usuario no tiene la la forma especifica en que se maneja , ejm una api.
+
+Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachada para que el comprador ofrezca un articulo, y en el backend podria estar habalndo multiples módilos diferentes para procesar la oferta.
