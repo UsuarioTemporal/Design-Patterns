@@ -17,17 +17,18 @@ public class Proxy implements Servidor{
     }
     @Override
     public String subir(String nombreFichero) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "\nSubiendo dede el proxi ..."+servidorReal.subir(nombreFichero);
+        
     }
 
     @Override
     public String listado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Listado desde el proxy ... "+servidorReal.listado();
     }
 
     @Override
-    public Fichero descargar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Fichero descargar(int id) {
+        return servidorReal.descargar(id);
     }
     
 }

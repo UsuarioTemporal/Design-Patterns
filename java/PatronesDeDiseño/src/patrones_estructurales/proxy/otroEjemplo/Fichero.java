@@ -59,9 +59,6 @@ public class Fichero {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
-    }
 
     @Override
     public String toString() {

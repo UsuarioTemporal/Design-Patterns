@@ -17,8 +17,8 @@ public class RealServer implements Servidor{
     private Hashtable<Integer,Fichero> ficheros ;
     private Fichero fich ;
 
-    public RealServer(String nombreFichero) {
-        this.nombre=nombreFichero;
+    public RealServer(String nombreServidor) {
+        this.nombre=nombreServidor;
         ficheros=new Hashtable<>();
     }
     
@@ -40,8 +40,8 @@ public class RealServer implements Servidor{
     }
 
     @Override
-    public Fichero descargar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Fichero descargar(int id) {
+        return ficheros.get(id);
     }
     
 }
