@@ -363,3 +363,7 @@ En el desarrollo de software , los patrones de comportamiento son patrones de di
 ### **Command**
 
 Encapsula comandos(llamados métodos) en objetos,permitiendonos realizar peticiones sin conocer exactamente la peticion que se realiza o el objeto al cual se le hace la peticion.
+
+Encapsula una solicitud como un objeto, lo que permite parametrizar a los clientes con diferentes solicitudes.
+
+Debe emitir solicitudes a objetos sin saber nada sobre la operacion solicitada o el receptor de la solicitud.

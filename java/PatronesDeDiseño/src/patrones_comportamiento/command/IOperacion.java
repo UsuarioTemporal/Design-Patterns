@@ -9,8 +9,8 @@ package patrones_comportamiento.command;
  *
  * @author User
  */
-public class App {
-    public static void main(String[] args) {
-        
-    } 
+
+@FunctionalInterface
+public interface IOperacion {
+    void execute();
 }

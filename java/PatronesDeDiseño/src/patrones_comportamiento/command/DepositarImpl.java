@@ -9,8 +9,6 @@ package patrones_comportamiento.command;
  *
  * @author User
  */
-public class App {
-    public static void main(String[] args) {
-        
-    } 
+public class DepositarImpl {
+    
 }
