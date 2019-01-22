@@ -5,7 +5,6 @@
  */
 package patrones_estructurales.proxy.otroEjemplo;
 
-import java.io.File;
 
 /**
  *
@@ -15,8 +14,6 @@ public class Fichero {
     private String id;
     private String name;
     private Fecha creationDate;
-    private long size;
-    private File file;
     private static int count = 0;
     
     
@@ -25,8 +22,6 @@ public class Fichero {
         this.id=Integer.toString(count);
         this.name = path;
         creationDate =new Fecha();
-        file = new File(path);
-        size=file.length();
         
     }
 
@@ -53,12 +48,6 @@ public class Fichero {
     public void setCreationDate(Fecha creationDate) {
         this.creationDate = creationDate;
     }
-
-
-    public File getFile() {
-        return file;
-    }
-
 
     @Override
     public String toString() {
