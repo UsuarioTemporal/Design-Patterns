@@ -10,7 +10,9 @@ package patrones_comportamiento.command;
  * @author User
  */
 
+// command
 @FunctionalInterface
 public interface IOperacion {
     void execute();
+    
 }
