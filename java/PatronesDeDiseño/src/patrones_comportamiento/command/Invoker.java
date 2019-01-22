@@ -19,5 +19,6 @@ public class Invoker {
     
     public void realizarOperaciones(){
         operaciones.forEach(e->e.execute());
+        operaciones.clear();
     }
 } // responsable de apilar las operaciones
