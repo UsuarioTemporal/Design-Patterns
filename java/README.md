@@ -347,8 +347,7 @@ Por lo general la intencion y el objeto de proxy es proporcionar una funcionalid
 
 Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachada para que el comprador ofrezca un articulo, y en el backend podria estar habalndo multiples módilos diferentes para procesar la oferta.
 
-
-**Tipo de proxy** 
+**Tipo de proxy**
 
 - Virtual : Da la creacion de un objeto a otro
 - Autentificación : Verifica que los permisos de acceso sean adecuados
@@ -358,3 +357,9 @@ Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachad
 ## **Patrones de diseño de comportamiento**
 
 En el desarrollo de software , los patrones de comportamiento son patrones de diseño que identifican patrones de comunicacion comunes entre objetos. Al hacerlo estos patrones aumentan la flexibilidad para llevar a cabo esta comunicacion de manera eficiente.
+
+> Forma en que las clases u objetos interaccionan y distribuyen funcionalidades
+
+### **Command**
+
+Encapsula comandos(llamados métodos) en objetos,permitiendonos realizar peticiones sin conocer exactamente la peticion que se realiza o el objeto al cual se le hace la peticion.
