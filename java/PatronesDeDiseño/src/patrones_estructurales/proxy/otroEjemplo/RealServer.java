@@ -38,5 +38,10 @@ public class RealServer implements Servidor{
         }
         return list;
     }
+
+    @Override
+    public Fichero descargar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

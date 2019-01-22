@@ -12,4 +12,5 @@ package patrones_estructurales.proxy.otroEjemplo;
 public interface Servidor {
     String subir(String nombreFichero);
     String listado();
+    Fichero descargar();
 }
