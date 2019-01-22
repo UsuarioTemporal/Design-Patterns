@@ -5,14 +5,15 @@
  */
 package patrones_comportamiento.command.ejm1;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author User
  */
-public class App {
-    public static void main(String[] args) {
-        Invoker invocador=new Invoker();
-        RealReceiver receptor=new RealReceiver();
-        invocador.executeCommand(new RealCommand(), receptor);
+public class Invoker {
+    private LinkedList<Receiver> listaReceptores=new LinkedList<>();
+    public void executeCommand(Command command,Receiver receiver){
+        command.execute(receiver);
     }
 }

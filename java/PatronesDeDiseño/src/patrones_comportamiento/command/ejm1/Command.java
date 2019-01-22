@@ -9,10 +9,6 @@ package patrones_comportamiento.command.ejm1;
  *
  * @author User
  */
-public class App {
-    public static void main(String[] args) {
-        Invoker invocador=new Invoker();
-        RealReceiver receptor=new RealReceiver();
-        invocador.executeCommand(new RealCommand(), receptor);
-    }
+public interface Command {
+    void execute(Receiver receiver);
 }

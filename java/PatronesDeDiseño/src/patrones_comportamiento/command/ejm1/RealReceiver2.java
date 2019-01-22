@@ -9,10 +9,11 @@ package patrones_comportamiento.command.ejm1;
  *
  * @author User
  */
-public class App {
-    public static void main(String[] args) {
-        Invoker invocador=new Invoker();
-        RealReceiver receptor=new RealReceiver();
-        invocador.executeCommand(new RealCommand(), receptor);
+public class RealReceiver2 implements Receiver{
+
+    @Override
+    public void hacerAlgo() {
+        System.out.println("Otro receptor ejecutando algo");
     }
+    
 }
