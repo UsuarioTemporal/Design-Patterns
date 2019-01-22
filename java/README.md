@@ -367,3 +367,17 @@ Encapsula comandos(llamados métodos) en objetos,permitiendonos realizar peticio
 Encapsula una solicitud como un objeto, lo que permite parametrizar a los clientes con diferentes solicitudes.
 
 Debe emitir solicitudes a objetos sin saber nada sobre la operacion solicitada o el receptor de la solicitud.
+
+
+#### **Aplicacion : **
+
+Cuando queremos realizar peticiones en diferentes tiempos .Se puede hacer atraves de la especificacion de una cola.
+
+Para implementar la funcion de deshacer , ya que puede alamacenar el estado de la ejecución del comando para revertir sus efectos.
+
+Cuando necesitamos mantener un registro (log) de los cambios y acciones.
+
+#### **Usos típicos**
+
+Mantener un historial de peticiones(request)
+Implementar la funcionalidad de callbacks
