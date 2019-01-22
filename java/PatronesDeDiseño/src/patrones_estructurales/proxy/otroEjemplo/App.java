@@ -35,11 +35,11 @@ public class App {
                             break;
                         case "2":
                             System.out.println("Introduzca nombre de fichero ");
-                            nombre=entrada.readLine();
-                            System.out.println(proxy);
+                            id=entrada.readLine();
+                            System.out.println(proxy.descargar(Integer.parseInt(id)));
                             break;
                         case "3":
-                            System.out.println("");
+                            System.out.println(proxy.listado());
                             break;
                        
                     }
