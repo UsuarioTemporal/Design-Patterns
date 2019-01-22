@@ -337,9 +337,9 @@ Da soporte a objetos que controlan la creacion y el acceso a otros objetos.Es un
 
 > Un ejemplo de Proxy puede ser el mecanismo para registrarse y hacer un login a un sitio web .No se tiene acceso a determinados objetos hasta que el usuario no este registrado y lleve a cabo el login de forma correcta.
 
-> Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la instaciacion del momento real de su uso.
-
-Si un calculo lleva mucho tiempo en realizarse , podemos usar el proxyn para mostrar resultados intermedios
+> Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la2 instaciacion del momento real de su uso.2
+2
+Si un calculo lleva mucho tiempo en realizarse , podemos2 usar el proxyn para mostrar resultados intermedios
 
 Estructuralmente es igual al patron de diseño facade.
 
@@ -354,3 +354,7 @@ Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachad
 - Autentificación : Verifica que los permisos de acceso sean adecuados
 - Remoto : Codifica las peticiones y las envia a la red
 - Smart : Adiciona o modifica las peticones antes de enviarlas
+
+## **Patrones de diseño de comportamiento**
+
+En el desarrollo de software , los patrones de comportamiento son patrones de diseño que identifican patrones de comunicacion comunes entre objetos. Al hacerlo estos patrones aumentan la flexibilidad para llevar a cabo esta comunicacion de manera eficiente.
