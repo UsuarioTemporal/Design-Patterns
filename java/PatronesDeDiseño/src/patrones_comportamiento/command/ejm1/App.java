@@ -13,6 +13,9 @@ public class App {
     public static void main(String[] args) {
         Invoker invocador=new Invoker();
         RealReceiver receptor=new RealReceiver();
+        invocador.addCommand(receptor);
+        invocador.addCommand(new RealReceiver());
+        invocador.addCommand(new RealReceiver());
         invocador.executeCommand(new RealCommand(), receptor);
     }
 }

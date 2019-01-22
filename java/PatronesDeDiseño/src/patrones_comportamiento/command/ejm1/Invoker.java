@@ -13,7 +13,11 @@ import java.util.LinkedList;
  */
 public class Invoker {
     private LinkedList<Receiver> listaReceptores=new LinkedList<>();
+    
+    public void addCommand(Receiver receiver){
+        listaReceptores.add(receiver);
+    }
     public void executeCommand(Command command,Receiver receiver){
-        command.execute(receiver);
+        listaReceptores.forEach(e->command.execute(e));
     }
 }
