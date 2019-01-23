@@ -10,5 +10,7 @@ package patrones_comportamiento.command.ejm2;
  * @author User
  */
 public interface Order {
-    
+    void execute();
+    String name();
+    void icon();
 }

@@ -10,5 +10,6 @@ package patrones_comportamiento.command.ejm2;
  * @author User
  */
 public interface Receiver1 {
-    
+    void action1();
+    void action2();
 }

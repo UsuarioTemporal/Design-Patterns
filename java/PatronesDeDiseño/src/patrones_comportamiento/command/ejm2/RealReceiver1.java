@@ -9,6 +9,14 @@ package patrones_comportamiento.command.ejm2;
  *
  * @author User
  */
-public class RealReceiver1 {
+public class RealReceiver1 implements Receiver1{
+
+    @Override
+    public void action1() {
+    }
+
+    @Override
+    public void action2() {
+    }
     
 }
