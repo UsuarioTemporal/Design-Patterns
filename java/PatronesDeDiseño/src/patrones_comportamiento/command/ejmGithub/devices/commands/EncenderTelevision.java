@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.command.ejmGithub.devices.comands;
+package patrones_comportamiento.command.ejmGithub.devices.commands;
 
 /**
  *
  * @author User
  */
-public interface Command {
-    void execute();
-    void undo();
+public class EncenderTelevision {
+    
 }

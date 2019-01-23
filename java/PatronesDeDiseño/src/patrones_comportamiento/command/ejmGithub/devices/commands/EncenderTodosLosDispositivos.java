@@ -3,33 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.command.ejmGithub.devices.comands;
+package patrones_comportamiento.command.ejmGithub.devices.commands;
 
 import java.util.LinkedList;
 import patrones_comportamiento.command.ejmGithub.devices.devices.ElectronicDevice;
 
 /**
  *
- * @author EncenderApagarTodosDEvices : Significa el commando real
+ * @author User
  */
-public class ApagarTodosLosDispositivos implements Command{
+public class EncenderTodosLosDispositivos implements Command{
+    
     private LinkedList<ElectronicDevice> dispositivos;
 
-    public ApagarTodosLosDispositivos(LinkedList<ElectronicDevice> nuevosDispositvos) {
-        dispositivos=nuevosDispositvos;
+    public EncenderTodosLosDispositivos(LinkedList<ElectronicDevice> nuevosDispositivos) {
+        dispositivos=nuevosDispositivos;
     }
     
     @Override
     public void execute() {
         dispositivos.forEach((e)->{
-            e.off();
+            e.on();
         });
     }
 
     @Override
     public void undo() {
         dispositivos.forEach((e)->{
-            e.on();
+            e.off();
         });
     }
     
