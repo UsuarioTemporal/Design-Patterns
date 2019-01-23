@@ -371,7 +371,7 @@ Tambien es conocido como Action, transaction.
 
 A veces es necesario realizar peticiones a objetos sin conocer la peticon ni quien va dirigida.
 
-#### **Aplicacion : **
+#### **Aplicacion :**
 
 Cuando queremos realizar peticiones en diferentes tiempos .Se puede hacer atraves de la especificacion de una cola.
 
@@ -393,3 +393,7 @@ Alamacenar el estado de un objeto
 Poder restaurar
 Almacenamiento del estado
 Hacer-Deshacer
+
+Caretaker -- Mantener asalvo
+Memento -- Alamacenará todo o parte del estado
+Originator -- sera como el elemento
