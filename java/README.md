@@ -367,7 +367,9 @@ Encapsula comandos(llamados métodos) en objetos,permitiendonos realizar peticio
 Encapsula una solicitud como un objeto, lo que permite parametrizar a los clientes con diferentes solicitudes.
 
 Debe emitir solicitudes a objetos sin saber nada sobre la operacion solicitada o el receptor de la solicitud.
+Tambien es conocido como Action, transaction.
 
+A veces es necesario realizar peticiones a objetos sin conocer la peticon ni quien va dirigida.
 
 #### **Aplicacion : **
 
