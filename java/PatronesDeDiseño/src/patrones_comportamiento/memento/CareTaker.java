@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.memento.ejmEDTEAM;
+package patrones_comportamiento.memento;
 
 import java.util.LinkedList;
 
@@ -12,17 +12,18 @@ import java.util.LinkedList;
  * @author User
  */
 public class CareTaker {
-    private LinkedList<Memento> mementos=new LinkedList<>();
+    private LinkedList<Memento> mementos = new LinkedList<>();
     public void addMemento(Memento memento){
         mementos.add(memento);
     }
     
-    public Memento getMemento(int position){
+    public Memento getState(int position){
         return mementos.get(position);
     }
+    
     public void getStates(){
-        mementos.forEach((s)->{
-            System.out.println(s.getState());
+        mementos.forEach((e)->{
+            System.out.println(e.getEstado());
         });
     }
 }

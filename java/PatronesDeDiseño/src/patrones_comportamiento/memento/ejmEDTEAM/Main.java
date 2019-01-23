@@ -16,7 +16,10 @@ public class Main {
         originator.setState("A");
         careTaker.addMemento(originator.save());
         originator.setState("B");
+        careTaker.addMemento(originator.save());
         originator.setState("C");
-        System.out.println(careTaker.getMemento().getState());
+//        System.out.println(careTaker.getMemento(0).getState());
+//        System.out.println(careTaker.getMemento(1).getState());
+        careTaker.getStates();
     }
 }

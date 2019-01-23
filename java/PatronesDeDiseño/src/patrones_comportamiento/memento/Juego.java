@@ -10,5 +10,29 @@ package patrones_comportamiento.memento;
  * @author User
  */
 public class Juego {
+    private String nombre;
+    private int puntaje;
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setPuntaje(int checkpoint) {
+        this.puntaje = checkpoint;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Juego{" + "nombre=" + nombre + ", checkpoint=" + puntaje + '}';
+    }
+    
     
 }

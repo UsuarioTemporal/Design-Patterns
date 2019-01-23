@@ -394,6 +394,8 @@ Poder restaurar
 Almacenamiento del estado
 Hacer-Deshacer
 
-Caretaker -- Mantener asalvo
+Caretaker -- Mantener asalvo , el objeto sabe por que y cuando el creador necesita guardarse y restaurarse
 Memento -- Alamacenará todo o parte del estado
-Originator -- sera como el elemento
+Originator -- sera como el elemento , objeto que puede salvarse
+
+Se utiliza para alamacenar y restaurar el estado de un objeto a un estado anterior
