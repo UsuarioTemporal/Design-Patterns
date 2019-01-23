@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.command.ejm3;
+package patrones_comportamiento.command.ejmGithub.devices.comands;
 
 /**
  *
- * @author User
+ * @author EncenderApagarTodosDEvices : Significa el commando real
  */
-public class App {
-    public static void main(String[] args) {
-        
-    }
+public class EncenderApagarTodosDevices {
+    
 }

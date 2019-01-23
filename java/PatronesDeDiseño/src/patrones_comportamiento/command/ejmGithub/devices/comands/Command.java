@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.command.ejmGithub.devices;
+package patrones_comportamiento.command.ejmGithub.devices.comands;
 
 /**
  *
- * @param DeviceButton : Esta clase es el invoker
+ * @author User
  */
-public class DeviceButton {
-    
+public interface Command {
+    void execute();
+    void undo();
 }
