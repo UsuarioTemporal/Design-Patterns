@@ -383,3 +383,13 @@ Cuando necesitamos mantener un registro (log) de los cambios y acciones.
 
 Mantener un historial de peticiones(request)
 Implementar la funcionalidad de callbacks
+
+
+## **Memento**
+
+Guardado del estado de alguna operacion, seria como un checkpoint para regresar a ese punto cuando lo necesitemos.
+
+Alamacenar el estado de un objeto
+Poder restaurar
+Almacenamiento del estado
+Hacer-Deshacer
