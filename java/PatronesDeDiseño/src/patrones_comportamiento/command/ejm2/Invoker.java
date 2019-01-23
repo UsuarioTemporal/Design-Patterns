@@ -8,9 +8,7 @@ package patrones_comportamiento.command.ejm2;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 
 /**
  *
@@ -21,14 +19,12 @@ public class Invoker {
     private Map<String,Order> ordenesMap=new HashMap<>();
     
     public void add(Order order){
+        ordenes.add(order);
     }
     
-    public void invoker(String key){
-        
-    }
-    
-    public void keys(){
-        
+    public void invoker(){
+        ordenes.forEach((e)->e.execute());
+        ordenes.clear();
     }
     
     

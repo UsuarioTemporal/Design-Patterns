@@ -2,7 +2,7 @@
 package patrones_comportamiento.command.ejm2;
 
 /**
- *
+ *s
  * @author User
  */
 public class RealOrder1 implements Order{
@@ -12,13 +12,15 @@ public class RealOrder1 implements Order{
         this.receive1=receiver1;
     }
     
+    
     @Override
     public void execute() {
+        receive1.action1();
     }
 
     @Override
     public String name() {
-        return null;
+        return "OrdenReal1";
     }
 
     @Override

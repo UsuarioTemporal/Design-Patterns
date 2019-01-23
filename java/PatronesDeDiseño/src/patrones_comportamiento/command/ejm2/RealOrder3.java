@@ -18,11 +18,12 @@ public class RealOrder3 implements Order{
     
     @Override
     public void execute() {
+        receive2.action3();
     }
 
     @Override
     public String name() {
-        return null;
+        return "OrdenReal3";
     }
 
     @Override

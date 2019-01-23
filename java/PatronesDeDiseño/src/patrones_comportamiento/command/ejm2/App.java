@@ -14,6 +14,13 @@ package patrones_comportamiento.command.ejm2;
  */
 public class App {
     public static void main(String[] args) {
-        
+        Order orden1 =new RealOrder1(new RealReceiver1());
+        Order orden2 = new RealOrder2(new RealReceiver1());
+        Order orden3=new RealOrder3(new RealReceiver2());
+        Invoker invocador = new Invoker();
+        invocador.add(orden1);
+        invocador.add(orden2);
+        invocador.add(orden3);
+        invocador.invoker();
     }
 }

@@ -13,7 +13,7 @@ public class RealReceiver2 implements Receiver2{
 
     @Override
     public void action3() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Accion 3");
     }
     
 }

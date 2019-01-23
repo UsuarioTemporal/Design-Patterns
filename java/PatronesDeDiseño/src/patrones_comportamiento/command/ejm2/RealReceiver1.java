@@ -13,10 +13,12 @@ public class RealReceiver1 implements Receiver1{
 
     @Override
     public void action1() {
+        System.out.println("Accion 1");
     }
 
     @Override
     public void action2() {
+        System.out.println("Accion 2");
     }
     
 }
