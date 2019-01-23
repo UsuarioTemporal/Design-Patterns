@@ -9,6 +9,6 @@ package patrones_comportamiento.command.ejmGithub.devices.commands;
  *
  * @author User
  */
-public class EncenderTelevision {
+public class ApagarDevice {
     
 }
