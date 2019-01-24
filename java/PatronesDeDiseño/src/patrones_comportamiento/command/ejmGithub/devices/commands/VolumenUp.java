@@ -5,10 +5,26 @@
  */
 package patrones_comportamiento.command.ejmGithub.devices.commands;
 
+import patrones_comportamiento.command.ejmGithub.devices.devices.ElectronicDevice;
+
 /**
  *
  * @author User
  */
-public class VolumenUp {
+public class VolumenUp implements Command{
+    private ElectronicDevice device;
+
+    public VolumenUp(ElectronicDevice device) {
+        this.device = device;
+    }
     
+    @Override
+    public void execute() {
+        device.volumenUp();
+    }
+
+    @Override
+    public void undo() {
+        device.volumenDown();
+    }
 }

@@ -5,10 +5,26 @@
  */
 package patrones_comportamiento.command.ejmGithub.devices.commands;
 
+import patrones_comportamiento.command.ejmGithub.devices.devices.ElectronicDevice;
+
 /**
  *
  * @author User
  */
-public class EncenderDevice {
+public class EncenderDevice implements Command{
+    private ElectronicDevice device;
+
+    public EncenderDevice(ElectronicDevice device) {
+        this.device = device;
+    }
     
+    @Override
+    public void execute() {
+        device.on();
+    }
+
+    @Override
+    public void undo() {
+        device.off();
+    }
 }

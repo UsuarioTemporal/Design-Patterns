@@ -5,10 +5,22 @@
  */
 package patrones_comportamiento.command.ejmGithub.devices;
 
+import patrones_comportamiento.command.ejmGithub.devices.commands.Command;
+
 /**
  *
  * @param DeviceButton : Esta clase es el invoker
  */
 public class DeviceButton {
+    private Command command;
     
+    public DeviceButton(Command command) {
+        this.command = command;
+    }
+    public void press(){
+        command.execute();
+    }
+    public void pressUndo(){
+        command.undo();
+    }
 }
