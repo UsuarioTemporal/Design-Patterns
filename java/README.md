@@ -399,3 +399,8 @@ Memento -- Alamacenará todo o parte del estado
 Originator -- sera como el elemento , objeto que puede salvarse
 
 Se utiliza para alamacenar y restaurar el estado de un objeto a un estado anterior
+
+
+## **Observer**
+
+Este patron de diseño es el que usa Angular
