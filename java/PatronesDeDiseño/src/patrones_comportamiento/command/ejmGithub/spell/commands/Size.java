@@ -12,7 +12,7 @@ package patrones_comportamiento.command.ejmGithub.spell.commands;
 public enum Size {
     SMALL("small"),NOMAL("normal"),LARGE("large"),UNDEFINED("");
     private String title;
-    Size(String title) {
+    private Size(String title) {
         this.title=title;
     }
 
