@@ -400,7 +400,10 @@ Originator -- sera como el elemento , objeto que puede salvarse
 
 Se utiliza para alamacenar y restaurar el estado de un objeto a un estado anterior
 
-
 ## **Observer**
 
 Este patron de diseño es el que usa Angular
+
+### **Proposito**
+
+Defina una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependan de el son notificados y se actualizan automaticamente
