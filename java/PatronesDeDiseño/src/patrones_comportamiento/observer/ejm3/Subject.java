@@ -20,5 +20,4 @@ public class Subject extends Observable{
         this.state = state;
         notifyObservers();
     }
-    
 }
