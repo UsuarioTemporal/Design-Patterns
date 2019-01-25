@@ -9,6 +9,17 @@ package patrones_comportamiento.observer.ejem1;
  *
  * @author User
  */
-public class PesoMXObserver {
+public class PesoMXObserver implements Observador{
+    private Sujeto subject;
+
+    public PesoMXObserver(Sujeto subject) {
+        this.subject = subject;
+        this.subject.addObserver(this);
+    }
+    
+    @Override
+    public void update() {
+        System.out.println("MX: " + (subject.getState()* 19.07));
+    }
     
 }

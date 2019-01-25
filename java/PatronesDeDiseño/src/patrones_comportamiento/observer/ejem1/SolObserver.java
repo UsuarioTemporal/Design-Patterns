@@ -10,9 +10,15 @@ package patrones_comportamiento.observer.ejem1;
  * @author User
  */
 public class SolObserver implements Observador{
-
+    private Sujeto subject;
+    public SolObserver(Sujeto subject) {
+        this.subject=subject;
+        this.subject.addObserver(this);
+    }
+    
     @Override
     public void update() {
+        System.out.println("PEN: "+(subject.getState()*3.25));
     }
     
 }

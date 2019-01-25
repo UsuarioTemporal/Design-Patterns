@@ -10,7 +10,7 @@ package patrones_comportamiento.observer.ejem1;
  * @author User
  */
 public class Sujeto extends Observable{
-    private int state;
+    private int state; // esto representara al objeto que cambiara
 
     public int getState() {
         return state;

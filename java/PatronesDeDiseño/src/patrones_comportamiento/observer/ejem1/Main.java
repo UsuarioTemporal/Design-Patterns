@@ -11,6 +11,14 @@ package patrones_comportamiento.observer.ejem1;
  */
 public class Main {
     public static void main(String[] args) {
+        Sujeto subject=new Sujeto();
+        new PesoArgObserver(subject);
+        new SolObserver(subject);
+        new PesoMXObserver(subject);
+        
+        subject.setState(10);
+        System.out.println("");
+        subject.setState(20);
         
     }
 }
