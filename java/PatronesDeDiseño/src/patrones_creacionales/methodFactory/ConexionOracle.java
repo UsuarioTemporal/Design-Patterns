@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_creacionales.fabrica;
+package patrones_creacionales.methodFactory;
 
 /**
  *
  * @author User
  */
-public class ConexionPostgreSQL implements IConexion{
+public class ConexionOracle implements IConexion{
 
     @Override
     public void conectar() {
-        System.out.println("Se conecto a PostgreSQL");
+        System.out.println("Se conecto a Oracle");
     }
+
     @Override
     public void desconectar() {
-        System.out.println("Se desconecto a PostgreSQL");
+        System.out.println("Se desconecto a Oracle");
     }
+    
 }

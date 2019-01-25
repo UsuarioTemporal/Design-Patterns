@@ -1,9 +1,11 @@
 
 # **Patrones de diseño creacionales**
 
-[Referenicias](https://www.tutorialspoint.com/design_pattern)
+[Referencias](https://www.tutorialspoint.com/design_pattern)
 
 [Preguntas](https://stackoverflow.com/questions/3489131/difference-between-the-facade-proxy-adapter-and-decorator-design-patterns)
+
+[MAS INFO](https://github.com/hazardco/Patrones-de-dise-o-para-humanos)
 
 Se centran en automatizar los problemas al crear instancias de las clases de nuestra aplicacion.
 
@@ -35,7 +37,7 @@ Se debe crear una clase SingleObject . Donde su constructor sea privado para que
 
 ### PLUS(Control de doble bloqueo)
 
-> Este es un patron de diseño utilizado para reducir la sobrecarga de adquirir un bloqueo al probar el criterio del bloqueo. <br>
+> Este es un patron de diseño utilizado para reducir la sobrecarga de adquirir un bloqueo al probar el criterio del bloqueo.
 >El bloqueo se produce solo si la verificación del criterio de bloqueo indica que se requiere un bloqueo
 
 Forma eficiente usando el doble control de bloqueo :
@@ -151,9 +153,9 @@ Reducir la complejidad y minimizar las dependencias, realizar acciones cortas
         private int contadores = -1;
         private int memoriaRam = 0;
         private int[] canales = new int[4];
-        private boolean voltajeOk, energiaDispositivosOk, 
-                        contadoresOk, biosOk, hardwareOk, 
-                        entradasOk, sectorArranqueOk, 
+        private boolean voltajeOk, energiaDispositivosOk,
+                        contadoresOk, biosOk, hardwareOk,
+                        entradasOk, sectorArranqueOk,
                         bootOk, soOk, listoOk;
         public Cpu(){}
 
@@ -315,7 +317,7 @@ Reducir la complejidad y minimizar las dependencias, realizar acciones cortas
     }
 ```
 
-**Conclusiones finales :** 
+**Conclusiones finales :**
 
 El patron de diseño fachada discute la encapsulacion de un subsistema complejo dentro de un único objeto de interfaz.Esto reduce la curva de aprendizaje necesaria para aprovechar con exito el subsistema.Tambien promueve el desacoplamiento del subsistewma de sus potenciales clientes
 
@@ -325,7 +327,7 @@ Lo que hace este patron es adicionar propiedades o acciones aun cierto objeto cl
 
 El proposito es minimizar el arbol de herencia . Asigna responsabilidades de forma dinamica a objetos , proporcionando una alternativa flexible de herencia.
 
-Supongamos que está trabajando en un kit de herramientasde interfaz de usuario y desea admitir la adcion de border y barras de desplazamientos a als ventanas.Podria definir una jerarquia de herencia como : 
+Supongamos que está trabajando en un kit de herramientasde interfaz de usuario y desea admitir la adcion de border y barras de desplazamientos a als ventanas.Podria definir una jerarquia de herencia como :
 
 ![alt](https://sourcemaking.com/files/v2/content/patterns/Decorator.png)
 
@@ -336,9 +338,8 @@ Pero el patron decorador sugiere darle al cliente la capacidad de especificar cu
 Da soporte a objetos que controlan la creacion y el acceso a otros objetos.Es un punto intermedio entre el cliente y esos objetos que son activados cuando se cumplen con determinados requisitos.
 
 > Un ejemplo de Proxy puede ser el mecanismo para registrarse y hacer un login a un sitio web .No se tiene acceso a determinados objetos hasta que el usuario no este registrado y lleve a cabo el login de forma correcta.
+> Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la2 instaciacion del momento real de su uso.
 
-> Otro uso de proxy es representar a un objeto que toma tiempo o recursos en crearse, de esta forma el cliente piensa que esta comunicando con el objeto , mientras el proxy decide la creacion cuando sea realmente necesario.Es decir diferenciamos la2 instaciacion del momento real de su uso.2
-2
 Si un calculo lleva mucho tiempo en realizarse , podemos2 usar el proxyn para mostrar resultados intermedios
 
 Estructuralmente es igual al patron de diseño facade.
@@ -347,7 +348,7 @@ Por lo general la intencion y el objeto de proxy es proporcionar una funcionalid
 
 Ejmplo mas comun es usar fachada en negocios,podria tener una interfaz de fachada para que el comprador ofrezca un articulo, y en el backend podria estar habalndo multiples módilos diferentes para procesar la oferta.
 
-**Tipo de proxy**
+**Tipo de proxy :**
 
 - Virtual : Da la creacion de un objeto a otro
 - Autentificación : Verifica que los permisos de acceso sean adecuados
@@ -384,7 +385,6 @@ Cuando necesitamos mantener un registro (log) de los cambios y acciones.
 Mantener un historial de peticiones(request)
 Implementar la funcionalidad de callbacks
 
-
 ## **Memento**
 
 Guardado del estado de alguna operacion, seria como un checkpoint para regresar a ese punto cuando lo necesitemos.
@@ -406,4 +406,22 @@ Este patron de diseño es el que usa Angular
 
 ### **Proposito**
 
-Defina una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependan de el son notificados y se actualizan automaticamente
+Defina una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependan de el son notificados y se actualizan automaticamente.
+
+Encapsula los componentes centrales (o comunes o del motor) en una abstarccion del sujeto, y los componentes variables (o opcionales o de interfaz de usuario) en una jerarquia de observadores.
+
+Muchas veces se separa los datos en si de su reprenstacion (MVC) pudiendo tener varias representaciones de un mismo dato.El modelo estara separado de los datos.
+
+> **Evitar el bucle de dependencias**
+
+Define un objeto que sea el "keeper(guardian)" del modelo de datos y/o la lógica de negocio(el sujeto).Delegar toda la funcionalidad de "vista" a objetos Observer desacoplados y distintos.
+
+### **Aplicacion:**
+
+Se usa cuando un cambio en un objeto requuire cambiar los demas pero no sabemos cantos objetos hay que cambiar.Configurar de manera dinamica un componente de la vista, enves de estaticamente durante el tiempo de compilacion.Un objeto debe ser capaz de notificar sin que estos objetos esten fuertemente acoplados.
+
+Subject : el objeto en observacion
+El observador
+Cliente
+
+> Este patron se utiliza mucho en la programcion reactiva

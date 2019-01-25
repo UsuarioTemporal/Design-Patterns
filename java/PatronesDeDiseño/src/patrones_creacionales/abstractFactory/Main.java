@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_creacionales.fabrica;
+package patrones_creacionales.abstractFactory;
 
 /**
  *
  * @author User
  */
-public interface IConexion {
-    void conectar();
-    void desconectar();
+public class Main {
+    
 }
