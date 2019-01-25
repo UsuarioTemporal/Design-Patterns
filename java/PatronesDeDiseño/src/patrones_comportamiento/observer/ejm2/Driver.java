@@ -15,9 +15,9 @@ public class Driver {
 
     public static void main(String[] args) {
         Subject subject = new Subject("Vote ?");
+        ConcrectObserver observer = new ConcrectObserver(subject);
         subject.vote("yes");
         subject.vote("yes");
-        ConcretObserver observer = new ConcretObserver(subject);
         subject.vote("no");
     }
 }

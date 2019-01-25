@@ -12,17 +12,19 @@ import java.util.Observer;
  *
  * @author User
  */
-public class ConcretObserver implements Observer{
-
-    public ConcretObserver(Subject subject) {
+public class ConcrectObserver implements Observer{
+    private Subject subject;
+    public ConcrectObserver(Subject subject) {
         subject.addObserver(this);
-        System.out.println("Yes total : "+subject.getYesCount());
-        System.out.println("No total : "+subject.getNoCount()+"\n");
+        this.subject=subject;
+        
     }
     
     @Override
     public void update(Observable o, Object arg) {
         System.out.println("New vote of "+arg+" just arrived ");
+        System.out.println("Yes total : "+subject.getYesCount());
+        System.out.println("No total : "+subject.getNoCount()+"\n");
     }
     
 }
