@@ -9,10 +9,16 @@ package patrones_comportamiento.observer.ejm3;
  *
  * @author User
  */
-public class OctalObserver implements Observer{
+public class Subject extends Observable{
+    private int state;
 
-    @Override
-    public void update() {
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+        notifyObservers();
     }
     
 }

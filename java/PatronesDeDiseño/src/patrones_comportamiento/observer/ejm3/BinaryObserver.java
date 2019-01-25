@@ -9,6 +9,11 @@ package patrones_comportamiento.observer.ejm3;
  *
  * @author User
  */
-public class BinaryObserver {
+public class BinaryObserver implements Observer{
+
+    @Override
+    public void update() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
