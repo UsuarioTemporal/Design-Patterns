@@ -15,7 +15,7 @@ public class Observable {
     private final LinkedList<Observer> observers =new LinkedList<>();
     
     public void addObserver(Observer obbserver){
-        observers.add(obbserver);
+        this.observers.add(obbserver);
     }
     
     public void notifyObservers(){

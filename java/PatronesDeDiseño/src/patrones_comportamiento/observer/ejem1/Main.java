@@ -15,6 +15,7 @@ public final class Main {
     }
     public final static void main(String[] args) {
         Sujeto subject=new Sujeto();
+        subject.setState(12);
         new PesoArgObserver(subject);
         new SolObserver(subject);
         new PesoMXObserver(subject);

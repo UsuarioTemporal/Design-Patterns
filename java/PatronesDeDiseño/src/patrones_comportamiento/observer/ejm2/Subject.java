@@ -22,8 +22,10 @@ public class Subject extends Observable{
     public void vote(String vote){
         if("yes".equalsIgnoreCase(vote)){
             yesCount++;
+            setChanged();
         }else if("no".equalsIgnoreCase(vote)){
             noCount++;
+            setChanged();
         }
         notifyObservers(vote);
     }

@@ -4,13 +4,20 @@
  * and open the template in the editor.
  */
 package patrones_comportamiento.observer.ejm2;
+
 import java.util.*;
+
 /**
  *
  * @author User
  */
-public class Driver{
+public class Driver {
+
     public static void main(String[] args) {
-        
+        Subject subject = new Subject("Vote ?");
+        subject.vote("yes");
+        subject.vote("yes");
+        ConcretObserver observer = new ConcretObserver(subject);
+        subject.vote("no");
     }
 }
