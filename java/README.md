@@ -418,9 +418,9 @@ Define un objeto que sea el "keeper(guardian)" del modelo de datos y/o la lógic
 
 ### **Aplicacion:**
 
-Se usa cuando un cambio en un objeto requuire cambiar los demas pero no sabemos cantos objetos hay que cambiar.Configurar de manera dinamica un componente de la vista, enves de estaticamente durante el tiempo de compilacion.Un objeto debe ser capaz de notificar sin que estos objetos esten fuertemente acoplados.
+Se usa cuando un cambio en un objeto require cambiar los demas pero no sabemos cantos objetos hay que cambiar.Configurar de manera dinamica un componente de la vista, en lugar de estaticamente durante el tiempo de compilacion.Un objeto debe ser capaz de notificar sin que estos objetos esten fuertemente acoplados.
 
-Subject : el objeto en observacion
+Subject : el objeto en observacion , este sujeto transmite eventos a todos los observables
 El observador
 Cliente
 
