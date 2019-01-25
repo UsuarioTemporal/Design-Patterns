@@ -9,16 +9,16 @@ import java.util.LinkedList;
 
 /**
  *
- * @author User
+ * Subject
  */
 public class Observable {
-    private final LinkedList<Observador> observers =new LinkedList<>();
+    private final LinkedList<Observer> observers =new LinkedList<>();
     
-    public void addObserver(Observador obbserver){
+    public void addObserver(Observer obbserver){
         observers.add(obbserver);
     }
     
     public void notifyObservers(){
-        observers.forEach((e)->e.update());
+        observers.forEach((obs)->obs.update());
     }
 }

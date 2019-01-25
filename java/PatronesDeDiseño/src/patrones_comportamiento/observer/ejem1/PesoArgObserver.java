@@ -7,9 +7,9 @@ package patrones_comportamiento.observer.ejem1;
 
 /**
  *
- * @author User
+ * concrete Observer
  */
-public class PesoArgObserver implements Observador{
+public class PesoArgObserver implements Observer{
     private Sujeto subject;
     public PesoArgObserver(Sujeto subject) {
 		this.subject = subject;
@@ -17,7 +17,7 @@ public class PesoArgObserver implements Observador{
 	}
 	
 	@Override
-	public void update() {		
+	public void update() {	
 		System.out.println("ARG: " + (subject.getState()* 29.86));
 	}
 }

@@ -9,7 +9,7 @@ package patrones_comportamiento.observer.ejem1;
  *
  * @author User
  */
-public class SolObserver implements Observador{
+public class SolObserver implements Observer{
     private Sujeto subject;
     public SolObserver(Sujeto subject) {
         this.subject=subject;

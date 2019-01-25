@@ -7,6 +7,8 @@
 
 [MAS INFO](https://github.com/hazardco/Patrones-de-dise-o-para-humanos)
 
+[Mas info](http://sce2.umkc.edu/BIT/burrise/pl/design-patterns/)
+
 Se centran en automatizar los problemas al crear instancias de las clases de nuestra aplicacion.
 
 ## **Singleton**

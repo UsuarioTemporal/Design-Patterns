@@ -9,7 +9,7 @@ package patrones_comportamiento.observer.ejem1;
  *
  * @author User
  */
-public class PesoMXObserver implements Observador{
+public class PesoMXObserver implements Observer{
     private Sujeto subject;
 
     public PesoMXObserver(Sujeto subject) {

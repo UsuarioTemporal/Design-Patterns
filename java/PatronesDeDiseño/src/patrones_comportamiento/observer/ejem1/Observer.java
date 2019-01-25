@@ -7,8 +7,9 @@ package patrones_comportamiento.observer.ejem1;
 
 /**
  *
- * @author User
+ * Observer
  */
-public interface Observador {
+public interface Observer {
+    
     void update();
 }

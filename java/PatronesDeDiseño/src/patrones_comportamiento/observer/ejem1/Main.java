@@ -9,8 +9,11 @@ package patrones_comportamiento.observer.ejem1;
  *
  * @author User
  */
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    private Main(){
+        
+    }
+    public final static void main(String[] args) {
         Sujeto subject=new Sujeto();
         new PesoArgObserver(subject);
         new SolObserver(subject);
@@ -21,4 +24,4 @@ public class Main {
         subject.setState(20);
         
     }
-}
+} 

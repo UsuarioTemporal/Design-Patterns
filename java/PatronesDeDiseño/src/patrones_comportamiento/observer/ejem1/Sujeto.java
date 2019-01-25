@@ -7,7 +7,7 @@ package patrones_comportamiento.observer.ejem1;
 
 /**
  *
- * @author User
+ * Concrect Subject
  */
 public class Sujeto extends Observable{
     private int state; // esto representara al objeto que cambiara
@@ -20,5 +20,4 @@ public class Sujeto extends Observable{
         this.state = state;
         notifyObservers();
     }
-    
 }
