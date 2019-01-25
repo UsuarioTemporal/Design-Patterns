@@ -14,7 +14,7 @@ public class PesoMXObserver implements Observer{
 
     public PesoMXObserver(Sujeto subject) {
         this.subject = subject;
-        this.subject.addObserver(this);
+        subject.addObserver(this);
     }
     
     @Override

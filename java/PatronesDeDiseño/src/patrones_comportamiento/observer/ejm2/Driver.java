@@ -5,8 +5,6 @@
  */
 package patrones_comportamiento.observer.ejm2;
 
-import java.util.*;
-
 /**
  *
  * @author User
@@ -15,9 +13,11 @@ public class Driver {
 
     public static void main(String[] args) {
         Subject subject = new Subject("Vote ?");
-        ConcrectObserver observer = new ConcrectObserver(subject);
+        new ConcrectObserver(subject);
         subject.vote("yes");
         subject.vote("yes");
+        subject.vote("no");
+        subject.vote("nell");
         subject.vote("no");
     }
 }

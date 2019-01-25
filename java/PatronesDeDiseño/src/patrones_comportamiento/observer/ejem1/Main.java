@@ -15,11 +15,13 @@ public final class Main {
     }
     public final static void main(String[] args) {
         Sujeto subject=new Sujeto();
-        subject.setState(12);
         new PesoArgObserver(subject);
         new SolObserver(subject);
         new PesoMXObserver(subject);
         
+        System.out.println("");
+        subject.setState(12);
+        System.out.println("");
         subject.setState(10);
         System.out.println("");
         subject.setState(20);
