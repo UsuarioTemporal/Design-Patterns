@@ -9,11 +9,18 @@ package patrones_comportamiento.observer.ejm3;
  *
  * @author User
  */
-public class HexaObserver implements Observer{
+public class HexaObserver implements Observer {
+
+    private Subject subject;
+
+    public HexaObserver(Subject subject) {
+        this.subject = subject;
+        subject.attach(this);
+    }
 
     @Override
     public void update() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Hex String: " + Integer.toHexString(subject.getState()).toUpperCase());
     }
-    
+
 }

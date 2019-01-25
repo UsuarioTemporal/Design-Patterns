@@ -9,11 +9,18 @@ package patrones_comportamiento.observer.ejm3;
  *
  * @author User
  */
-public class BinaryObserver implements Observer{
+public class BinaryObserver implements Observer {
+
+    private Subject subject;
+
+    public BinaryObserver(Subject subject) {
+        this.subject = subject;
+        subject.attach(this);
+    }
 
     @Override
     public void update() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Binary String: " + Integer.toBinaryString(subject.getState()));
     }
-    
+
 }
