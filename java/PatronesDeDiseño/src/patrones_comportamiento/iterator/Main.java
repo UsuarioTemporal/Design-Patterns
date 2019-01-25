@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.observer.ejem1;
+package patrones_comportamiento.iterator;
 
 /**
  *
- * Observer
+ * @author User
  */
-public interface Observer {
+public class Main {
     
-    void update();
 }

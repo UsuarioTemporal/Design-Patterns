@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrones_comportamiento.observer.ejem1;
+package patrones_comportamiento.observer.ejm1;
 
 import java.util.LinkedList;
 
