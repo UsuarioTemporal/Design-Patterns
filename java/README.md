@@ -510,11 +510,11 @@ Imaginemos un sistema de escritura en XML o en JSON donde se almacenará los dat
 
 # **Extras**
 
-## **Inyeccion de dependencias**
+## **Principio de Inyeccion de dependencias**
 
 Tambien conocido como el patron del contenedor.
 Esencialmnete , con la inyeccion de dependencias trataremos de crear metodos que nos devuelvan el objeto que les solicitemos. Esto es util porque requieren muchos parámetros o incluso otros objetos para ser iniciados .Como esto puede ser complejo, lo idela es crear un metodo que reuna toda la informacion para crear el objeto y directamente nos devulva una instacia del objeto deseado.
 
-> Los objetos deben ser loose coupling : Los objetos deben saber poco o nada de los otros objetos
+## **Principio de inversion de dependencias**
 
-> Principio de Inversion
+> Los objetos deben ser loose coupling : Los objetos deben saber poco o nada de los otros objetos
