@@ -487,3 +487,13 @@ Los algoritmos sean independientes de los usuarios que lo usan.
 - poder cambiar el comportamiento en tiempo de ejecucion
 - evitar condicionales
 - ocultar codigo compliado, o que no queremos revelar, del usuario
+
+### **Pasos**
+
+Se define una familia de algoritmos intercambiables
+Detalles de la implementacion del algoritmo bury en clases derivadas
+
+**Control/Optimizacion de inventario :**
+
+- Agregar mas algoritmos
+- Generar diferentes versiones del sistema

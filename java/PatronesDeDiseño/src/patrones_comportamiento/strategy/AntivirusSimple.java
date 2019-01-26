@@ -31,7 +31,7 @@ public class AntivirusSimple extends AnalisisSimple{
 
     @Override
     void detener() {
-        System.out.println("Antivitus Simple - analisisi finalizado");
+        System.out.println("Antivitus Simple - analisis finalizado");
     }
 
     
