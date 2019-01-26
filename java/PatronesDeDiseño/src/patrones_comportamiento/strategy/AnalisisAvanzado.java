@@ -9,6 +9,21 @@ package patrones_comportamiento.strategy;
  *
  * @author User
  */
-public class AnalisisAvanzado {
-    
+public abstract class AnalisisAvanzado implements IEstrategia{
+
+    @Override
+    public void analizar() {
+        iniciar();
+        analizarMemoria();
+        analizarKeyLoggers();
+        analizarRootKits();
+        descomprimirZip();
+        detener();
+    }
+    public abstract void iniciar();
+    public abstract void detener();
+    public abstract void analizarMemoria();
+    public abstract void analizarKeyLoggers();
+    public abstract void analizarRootKits();
+    public abstract void descomprimirZip();
 }

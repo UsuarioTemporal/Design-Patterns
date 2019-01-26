@@ -10,5 +10,5 @@ package patrones_comportamiento.strategy;
  * @author User
  */
 public interface IEstrategia {
-    
+    void analizar();
 }

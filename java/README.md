@@ -478,4 +478,12 @@ Cliente
 Define una familia de algoritmos , encapsularlos y hacerlos intercambiables.
 Captura la abstraccfion de una interfaz, entirra los detalles de implementacion en clases derivadas.
 
-Los algoritmos sean independientes de los usarios que lo usan.
+Los algoritmos sean independientes de los usuarios que lo usan.
+
+### **Aplicacion**
+
+- definir una familia de comportamiento
+- definir variantes de un mismo algoritmo
+- poder cambiar el comportamiento en tiempo de ejecucion
+- evitar condicionales
+- ocultar codigo compliado, o que no queremos revelar, del usuario
