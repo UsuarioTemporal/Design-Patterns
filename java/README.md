@@ -497,3 +497,5 @@ Detalles de la implementacion del algoritmo bury en clases derivadas
 
 - Agregar mas algoritmos
 - Generar diferentes versiones del sistema
+
+En el patron estategia creamos objetos que representan diversas estrategias y un objeto de contexto cuyo comportamiento varia segun su objeto de estrategia.El objeto de estrategia cambia el algoritmo de ejecucion del objeto de contexto.
