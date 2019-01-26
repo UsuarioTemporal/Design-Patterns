@@ -9,5 +9,5 @@ package patrones_comportamiento.strategy.ejm1;
  *
  * @author User
  */
-public class AvionComercial extends Avion{
+public class AvionComercial extends Avion{ //ConcretContext
 }

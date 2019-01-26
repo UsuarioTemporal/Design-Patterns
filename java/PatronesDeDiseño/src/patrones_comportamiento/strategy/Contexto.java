@@ -16,5 +16,6 @@ public class Contexto {
     }
     public void ejecutar(){
         this.estrategia.analizar();
+        
     }
 }

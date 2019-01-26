@@ -9,8 +9,8 @@ package patrones_comportamiento.strategy.ejm1;
  *
  * @author User
  */
-public abstract class Avion {
-    private Algoritmo algoritmo;
+public abstract class Avion { // Contexto
+    private Algoritmo algoritmo; // estrategia
     
     public void setAlgoritmo(Algoritmo algoritmo){
         this.algoritmo=algoritmo;

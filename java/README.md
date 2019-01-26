@@ -499,3 +499,11 @@ Detalles de la implementacion del algoritmo bury en clases derivadas
 - Generar diferentes versiones del sistema
 
 En el patron estategia creamos objetos que representan diversas estrategias y un objeto de contexto cuyo comportamiento varia segun su objeto de estrategia.El objeto de estrategia cambia el algoritmo de ejecucion del objeto de contexto.
+
+### **Elementos**
+
+- Contexto : Es el elemento que usa los algoritmos , por tanto , delega en la jerarquia de estrategia concreta mediante una referencia a la estrategia.
+- Strategy : Declara una interfaz comun para todos los algoritmos soportados .Estaa interfaz será usada por el contexto para invocar ala estrategia concreta
+- ConcrectStrategy : implementa el algoritmo utilizando la interfaz definida por la estrategia
+
+Imaginemos un sistema de escritura en XML o en JSON donde se almacenará los datos del usuario pero el usuario debe decidir como almacenara sus datos , entonces programamos lo siguiente un Contexto que seria el administrador que tendra la interface algoritmo o estrategia que usara el usuario para poder alamcenar correctamente sus datos 

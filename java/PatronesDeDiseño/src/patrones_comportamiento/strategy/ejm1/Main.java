@@ -11,8 +11,8 @@ package patrones_comportamiento.strategy.ejm1;
  */
 public class Main {
     public static void main(String[] args) {
-        AvionRapido avionRapido=new AvionRapido();
-        avionRapido.setAlgoritmo(new EnAire());
+        AvionRapido avionRapido=new AvionRapido();// contexto
+        avionRapido.setAlgoritmo(new EnAire()); // insrtando la estrategia
         avionRapido.mover();
     }
 }
