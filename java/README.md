@@ -427,3 +427,52 @@ El observador
 Cliente
 
 > Este patron se utiliza mucho en la programcion reactiva
+
+```java
+    // Acelerador --> Motor
+    // Motor Observa (Observer) -- Acelerador Observador y el sujeto que sera el observable
+
+    //Motor -- observador
+    //acelerador sra el sujeto y esto es un observable
+
+    interface Observer{
+        void update();
+    }
+    class Observable{
+        private List<Observer> observers=new LinkedList<>();
+        public addObserver(Observer ob){
+            observers.add(ob);
+        }
+        public void notifyObservers(){
+            observers.forEach(o->o.update());
+        }
+    }
+
+    class Acelerador extends Observable{ //Sujeto
+        public void pisarPotencia(){
+            notifyObservers();
+        }
+    }
+
+    class Motor implements Observer{
+        public Motor(Acelerador ace) {
+            ace.addObserver(this);
+        }
+        @Override
+        public void update(){
+            System.out.println("Se piso el acelerador ");
+        }
+    }
+
+    class Main{
+        public static void main(String[] args) {
+            Acelerador acelerador=new Acelerador(); // sujeto es decir el observable
+            new Motor(acelerador); // Observer
+            acelerador.pisarPotencia();
+        }
+    }
+```
+
+## **Strategy**
+
+Define una familia de algoritmos , encapsularlos y hacerlos intercambiables
