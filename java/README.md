@@ -475,4 +475,7 @@ Cliente
 
 ## **Strategy**
 
-Define una familia de algoritmos , encapsularlos y hacerlos intercambiables
+Define una familia de algoritmos , encapsularlos y hacerlos intercambiables.
+Captura la abstraccfion de una interfaz, entirra los detalles de implementacion en clases derivadas.
+
+Los algoritmos sean independientes de los usarios que lo usan.
