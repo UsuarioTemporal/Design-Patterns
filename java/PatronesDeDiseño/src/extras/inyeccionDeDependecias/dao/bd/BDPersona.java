@@ -8,15 +8,14 @@ package extras.inyeccionDeDependecias.dao.bd;
 import extras.inyeccionDeDependecias.dao.interfaz.PersonaDAO;
 import extras.inyeccionDeDependecias.model.Persona;
 import java.util.List;
-import patrones_creacionales.singleton.Conexion;
 
 /**
  *
  * @author User
  */
 public class BDPersona implements PersonaDAO{
-    private Conexion conx;
-    public BDPersona(Conexion conx){
+    private IConexion conx;
+    public BDPersona(IConexion conx){
         this.conx=conx;
     }
     @Override
@@ -48,6 +47,12 @@ public class BDPersona implements PersonaDAO{
     public Persona showByID(Integer key) {
         //logica
         return null;
+    }
+
+    private static class Conexion {
+
+        public Conexion() {
+        }
     }
     
 }
