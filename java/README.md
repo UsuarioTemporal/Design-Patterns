@@ -517,6 +517,24 @@ Esencialmnete , con la inyeccion de dependencias trataremos de crear metodos que
 
 Este es un patron de diseño orientado a objetos, en el que se suministran objetos a una clase en lugar de ser la propia clase la responsable de instaciar . Esos objetos cumplen contratos que necesitan nuestras clases para poder funcionar(de ahi el nombre de dependencia).
 
+```java
+    // Uso del patron inyeccion de dependencias
+    public class A{
+        private B dependency;
+
+        //Mediante constructor
+        public A(B dependency){
+            this.dependency=dependency;
+        }
+
+        // O mediante un método
+        public void setDependecy(B dependecy){
+            this.dependency=dependecy;
+        }
+}
+
+```
+
 ## **Principio de inversion de dependencias**
 
 > Los objetos deben ser loose coupling : Los objetos deben saber poco o nada de los otros objetos
