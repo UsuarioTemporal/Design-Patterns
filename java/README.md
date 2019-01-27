@@ -515,7 +515,7 @@ Imaginemos un sistema de escritura en XML o en JSON donde se almacenará los dat
 Tambien conocido como el patron del contenedor.
 Esencialmnete , con la inyeccion de dependencias trataremos de crear metodos que nos devuelvan el objeto que les solicitemos. Esto es util porque requieren muchos parámetros o incluso otros objetos para ser iniciados .Como esto puede ser complejo, lo idela es crear un metodo que reuna toda la informacion para crear el objeto y directamente nos devulva una instacia del objeto deseado.
 
-Este es un patron de diseño orientado a objetos, en el que se suministran objetos a una clase en lugar de ser la propia clase la responsable de instaciar .
+Este es un patron de diseño orientado a objetos, en el que se suministran objetos a una clase en lugar de ser la propia clase la responsable de instaciar . Esos objetos cumplen contratos que necesitan nuestras clases para poder funcionar(de ahi el nombre de dependencia).
 
 ## **Principio de inversion de dependencias**
 
