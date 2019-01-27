@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package extras.inyeccionDeDependecias.dao.bd;
-
 /**
  *
  * @author User
@@ -14,10 +13,17 @@ public class BDConexion { // singleton
     private BDConexion(){
         
     }
-    public BDConexion getInstance(){
+    public static BDConexion getInstance(){
         if(conexionBD==null){
             conexionBD=new BDConexion();
         }
         return conexionBD;
+    }
+    
+    public void conectar(){
+        System.out.println("Conectado");
+    }
+    public void desconectar(){
+        System.out.println("Desconectar");
     }
 }

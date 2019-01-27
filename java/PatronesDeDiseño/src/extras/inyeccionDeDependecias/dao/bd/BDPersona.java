@@ -8,26 +8,34 @@ package extras.inyeccionDeDependecias.dao.bd;
 import extras.inyeccionDeDependecias.dao.interfaz.PersonaDAO;
 import extras.inyeccionDeDependecias.model.Persona;
 import java.util.List;
+import patrones_creacionales.singleton.Conexion;
 
 /**
  *
  * @author User
  */
 public class BDPersona implements PersonaDAO{
-
+    private Conexion conx;
+    public BDPersona(Conexion conx){
+        this.conx=conx;
+    }
     @Override
     public void update(Persona object) {
+        conx.conectar();
         System.out.println("Persona "+object.getName()+" actualizada");
+        conx.desconectar();
     }
 
     @Override
     public void insert(Persona object) {
+        conx.conectar();
         System.out.println("Persona "+object.getName()+" registrada");
+        conx.desconectar();
     }
 
     @Override
     public void delete(Integer key) {
-        //logica
+        //
     }
 
     @Override
