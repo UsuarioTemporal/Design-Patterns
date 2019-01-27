@@ -9,6 +9,15 @@ package extras.inyeccionDeDependecias.dao.bd;
  *
  * @author User
  */
-public class BDConexion {
-    
+public class BDConexion { // singleton
+    private static BDConexion conexionBD;
+    private BDConexion(){
+        
+    }
+    public BDConexion getInstance(){
+        if(conexionBD==null){
+            conexionBD=new BDConexion();
+        }
+        return conexionBD;
+    }
 }
