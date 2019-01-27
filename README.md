@@ -6,6 +6,6 @@ En :
 - golang 
 - python
 - javascript 
-- typecript
+- typescript
 
 Los patrones de diseño son la parte mas importante al desarrollar software
