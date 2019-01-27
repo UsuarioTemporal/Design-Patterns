@@ -518,3 +518,5 @@ Esencialmnete , con la inyeccion de dependencias trataremos de crear metodos que
 ## **Principio de inversion de dependencias**
 
 > Los objetos deben ser loose coupling : Los objetos deben saber poco o nada de los otros objetos
+
+# **Principios SOLID**
