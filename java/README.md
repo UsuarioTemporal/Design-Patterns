@@ -540,3 +540,17 @@ Este es un patron de diseño orientado a objetos, en el que se suministran objet
 > Los objetos deben ser loose coupling : Los objetos deben saber poco o nada de los otros objetos
 
 # **Principios SOLID**
+
+[SUPER](https://www.ecodeup.com/patrones-de-diseno-en-java-mvc-dao-y-dto/)
+
+## **MVC**
+
+- Model : El modelo representa un objeto o Java Pojo trssnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.
+- View : La vista representa la visualizacion de los datos que contienen el modelo
+- Controller : sd
+
+## **MVP**
+
+Model
+View
+Presenter
