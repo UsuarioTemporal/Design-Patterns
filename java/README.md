@@ -541,18 +541,23 @@ Este es un patron de diseño orientado a objetos, en el que se suministran objet
 
 # **Principios SOLID**
 
-[SUPER](https://www.ecodeup.com/patrones-de-diseno-en-java-mvc-dao-y-dto/)
-
 # **Patrones de arquitectura**
 
 ## **MVC**
 
-- Model : El modelo representa un objeto o Java Pojo trasnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.
-- View : La vista representa la visualizacion de los datos que contienen el modelo
-- Controller : El controlador actua tanto en el modelo como la vista y actualiza la vista cuando los datos cambian.Mantiene la vista y el modelo separados.
+- Model : El modelo representa un objeto o Java Pojo trasnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian. 
+- View : La vista representa la visualizacion de los datos que contienen el modelo.Esta vista sabe como acceder a a los datos del modelo, pero no sabe qué significa esta informacion o qué puede el usuario para manipularla.
+- Controller : El controlador actua tanto en el modelo como la vista y actualiza la vista cuando los datos cambian.Mantiene la vista y el modelo separados.Este controlador existe entre la vista y el modelo.Escucha los eventos desencadenados por la vista(u otra fuente externa) y ejecuta la reaccion apropiada a estos eventos es llamar a un método en el modelo.Dado que la vista y el modelo están conectados a atraves de un mecanismo de notificacion , el resultado de esta acccion se refleja automaticamente en la vista.
+
+MVC es más que un patrón de arquitectura, pero no para una aplicación completa.MVC se relacion con la capa de interaccion de una aplicacion(UI User interface) . Todavía va a necesitar una capa lógica empresarial, tal ves alguna capa de servicio y de capa de acceso a datos.
+
+![UML](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/MVC-Design-Pattern.png)
+![UML2](https://i.stack.imgur.com/a4UfP.gif)
 
 ## **MVP**
 
 - Model
 - View
 - Presenter
+
+[SUPER](https://www.ecodeup.com/patrones-de-diseno-en-java-mvc-dao-y-dto/)
