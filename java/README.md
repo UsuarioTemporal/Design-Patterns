@@ -543,14 +543,16 @@ Este es un patron de diseño orientado a objetos, en el que se suministran objet
 
 [SUPER](https://www.ecodeup.com/patrones-de-diseno-en-java-mvc-dao-y-dto/)
 
+# **Patrones de arquitectura**
+
 ## **MVC**
 
-- Model : El modelo representa un objeto o Java Pojo trssnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.
+- Model : El modelo representa un objeto o Java Pojo trasnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.
 - View : La vista representa la visualizacion de los datos que contienen el modelo
-- Controller : sd
+- Controller : El controlador actua tanto en el modelo como la vista y actualiza la vista cuando los datos cambian.Mantiene la vista y el modelo separados.
 
 ## **MVP**
 
-Model
-View
-Presenter
+- Model
+- View
+- Presenter
