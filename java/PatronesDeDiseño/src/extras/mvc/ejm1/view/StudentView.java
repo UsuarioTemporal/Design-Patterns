@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package extras.mvc.model.dao.interfaces;
-
-import extras.mvc.model.pojo.Persona;
-
+package extras.mvc.ejm1.view;
 
 /**
  *
  * @author User
  */
-public interface IPersonaDAO extends DAO<Integer, Persona>{
+public class StudentView {
+    public void printStudentDetail(String studentName){
+        System.out.println("Student : ");
+        System.out.println("Name : "+studentName);
+    }
 }
