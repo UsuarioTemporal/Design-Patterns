@@ -566,7 +566,7 @@ MVC es más que un patrón de arquitectura, pero no para una aplicación complet
 
 ## **Objetivos**
 
-El objetivo de este patron de arquitectura no otro mas que separar las reponsivilidades de la aplicación.
+El objetivo de este patron de arquitectura no otro mas que separar las reponsibilidades de la aplicación.
 
 ## **MVP**
 
