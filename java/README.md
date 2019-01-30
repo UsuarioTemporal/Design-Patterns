@@ -545,14 +545,28 @@ Este es un patron de diseño orientado a objetos, en el que se suministran objet
 
 ## **MVC**
 
-- Model : El modelo representa un objeto o Java Pojo trasnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.
+- Model : El modelo representa un objeto o Java Pojo trasnportando datos.Tambien puede tener lógica para actualizar el controlador si sus datos cambian.Este debe ser el cerebro de la aplicacion,el modelo debe saber absolutamente nada de la interfaz grafica, y su única preocupacion debe ser la de llevar a cabo todo lo que nuestra aplicación debe hacer en lo que concierne al problema que estamos buscando resolver con la app.
 - View : La vista representa la visualizacion de los datos que contienen el modelo.Esta vista sabe como acceder a a los datos del modelo, pero no sabe qué significa esta informacion o qué puede el usuario para manipularla.
 - Controller : El controlador actua tanto en el modelo como la vista y actualiza la vista cuando los datos cambian.Mantiene la vista y el modelo separados.Este controlador existe entre la vista y el modelo.Escucha los eventos desencadenados por la vista(u otra fuente externa) y ejecuta la reaccion apropiada a estos eventos es llamar a un método en el modelo.Dado que la vista y el modelo están conectados a atraves de un mecanismo de notificacion , el resultado de esta acccion se refleja automaticamente en la vista.
 
 MVC es más que un patrón de arquitectura, pero no para una aplicación completa.MVC se relacion con la capa de interaccion de una aplicacion(UI User interface) . Todavía va a necesitar una capa lógica empresarial, tal ves alguna capa de servicio y de capa de acceso a datos.
 
+> Vista : Oye controlador, el usuario quiere que borremos el registro 4 de la tabla de alumnos .Toma la informacion
+
+> Controlador : Muy bien vista,déjame ver si el usuario puede hacer esto, sí,sí puede.Oye modelo .Toma, hay que borrar el registro 4 de la tabla de alumnos.
+
+>Modelo: Esta bien controlador, lo hago,Bien copntrolador aquí esta la infromacion 
+
+>Controlador : Gracias modelo , oye vista , toma la infromaciópn nueva de los alumnos
+
+>Vista : Oh grcias controlador,se lo muestro al usuario
+
 ![UML](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/MVC-Design-Pattern.png)
 ![UML2](https://i.stack.imgur.com/a4UfP.gif)
+
+## **Objetivos**
+
+El objetivo de este patron de arquitectura no otro mas que separar las reponsivilidades de la aplicación.
 
 ## **MVP**
 
