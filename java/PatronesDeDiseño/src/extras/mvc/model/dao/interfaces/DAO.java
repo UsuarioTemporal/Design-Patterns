@@ -5,10 +5,12 @@
  */
 package extras.mvc.model.dao.interfaces;
 
+import java.util.List;
+
 /**
  *
  * @author User
  */
 public interface DAO<K,O> {
-    
+    List<O> listar();
 }

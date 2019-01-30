@@ -5,7 +5,8 @@
  */
 package extras.mvc.model.dao.interfaces;
 
-import patrones_creacionales.prototipo.ejemplos.Persona;
+import extras.mvc.model.pojo.Persona;
+
 
 /**
  *
