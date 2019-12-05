@@ -1,5 +1,6 @@
 from abc import ABCMeta , abstractmethod
-
+from functools import reduce
+from typing import List
 # Sustituton Liskov y Interface segreagation
 class IHasArea(metaclass=ABCMeta):
     __metaclass__ = ABCMeta
@@ -57,6 +58,20 @@ class Triangulo(Figura) :
     def area(self):
         return self.__altura*self.__base/2
 
+class AreaOperations:
+    def __init__(self):
+        pass
+    def sum(self,listShapes:List[Figura])->int:
+        area = reduce(lambda acc,curr:acc+curr.area(),listShapes,0)
+        return area
+
+class GreatCalculator:
+    def __init__(self):
+        pass
+    def calculate(self,shapes:List[Figura]):
+        areaOperations = AreaOperations()
+        return areaOperations.sum(shapes)
+
 if __name__ == "__main__":
     rec = Rectangulo(17,10)
     tri = Triangulo(17,10)
@@ -65,5 +80,9 @@ if __name__ == "__main__":
     Imprimir.mostrar(tri)
     Imprimir.area(rec)
     Imprimir.area(tri)
+    listShapes:List[Figura] = [rec,tri]
+    calculator = GreatCalculator()
+    print(calculator.calculate(listShapes))
     # print(isinstance(rec,Figura))
     # print(Imprimir.metodoClase().__dict__)
+
