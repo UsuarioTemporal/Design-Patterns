@@ -1,15 +1,20 @@
 from abc import ABCMeta , abstractmethod
 
-# OPEN / CLOSE
-class Figura(metaclass=ABCMeta):
-
-    def __str__(self): # encargado de que mostrar mas nó de como mostrarlo SINGLE RESPONSABILITY, separar el como en otra clase
-        return self.__dict__
+# Sustituton Liskov y Interface segreagation
+class IHasArea(metaclass=ABCMeta):
+    __metaclass__ = ABCMeta
     @abstractmethod
     def area(self):
         pass
+class IHasInoformation(metaclass=ABCMeta):
+    __metaclass__ = ABCMeta
+    def __str__(self): # encargado de que mostrar mas nó de como mostrarlo SINGLE RESPONSABILITY, separar el como en otra clase
+        return self.__dict__
 
-class Imprimir:
+# OPEN / CLOSE
+class Figura(IHasArea,IHasInoformation):
+    __metaclass__ = ABCMeta
+class Imprimir(metaclass=ABCMeta):
     # def __init__(self, name, age):
     #     self.name = name
     #     self.age = age

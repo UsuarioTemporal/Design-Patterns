@@ -7,4 +7,4 @@ if __name__ == "__main__":
     Imprimir.mostrar(rec)
     Imprimir.mostrar(tri)
     Imprimir.area(rec)
-    Imprimir.area(tri)
+    Imprimir.area(tri) 
