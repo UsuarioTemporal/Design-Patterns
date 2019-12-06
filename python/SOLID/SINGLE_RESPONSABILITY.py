@@ -13,6 +13,7 @@ class IHasInoformation(metaclass=ABCMeta):
         return self.__dict__
 
 # OPEN / CLOSE
+# Interface Segregation
 class Figura(IHasArea,IHasInoformation):
     __metaclass__ = ABCMeta
 class Imprimir(metaclass=ABCMeta):
